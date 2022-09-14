@@ -22,20 +22,20 @@ const PNavbar = () => {
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={handleToggle}
-            style={{ border: "0px", color: "#DADCE0" }}
+            style={{ border: "0px", color: "#EDF5E1" }}
             aria-controls="basic-navbar-nav"
           >
             {isToggle ? (
               <IoClose
                 size={40}
                 className="close_navbar"
-                style={{ color: "#35363A " }}
+                style={{ color: "#05386B " }}
               />
             ) : (
               <IoMenu
                 size={40}
                 className="open_navbar"
-                style={{ color: "#35363A " }}
+                style={{ color: "#05386B " }}
               />
             )}
           </Navbar.Toggle>
@@ -59,10 +59,18 @@ const PNavbar = () => {
               </Nav.Link>
             </Nav>
             <Nav className="ms-auto">
-              <a href={resume} download style={{ listStyle: "none" }}>
+              <a
+                className="text-center"
+                href={resume}
+                download
+                style={{ listStyle: "none" }}
+              >
                 <Button
                   className="px-4"
-                  style={{ backgroundColor: "#05386B", border: "none" }}
+                  style={{
+                    backgroundColor: "#05386B",
+                    border: "none",
+                  }}
                 >
                   Download CV
                 </Button>

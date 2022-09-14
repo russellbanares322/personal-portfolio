@@ -10,7 +10,9 @@
  height: 5rem;
 }
 .title{
-  height: 15rem !important;
+  height: 50rem !important;
+  background-image: url("./images/bodyBg.svg");
+  background-size: cover;
 }
 .p_title {
   font-size: 70px;
@@ -29,14 +31,13 @@
   text-shadow: 5px 1px 0px #05386B;
 }
 .p_text {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 90px;
-  font-weight: 400;
+  font-weight: 500;
   color: #EDF5E1;
-  -webkit-text-stroke: 0.4px #05386B;
+  -webkit-text-stroke: 0.7px #05386B;
 }
 .project_header_text {
-  padding-top: 85px !important;
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 3px;
@@ -53,7 +54,7 @@
   color: #EDF5E1;
 }
 .technologies_header_text {
-  margin-top: 70px !important;
+  margin-top: 40px !important;
   margin-bottom: 50px !important;
   font-size: 50px;
   -webkit-text-stroke: 1.5px #05386B;
@@ -108,13 +109,8 @@ h6 {
 }
 
 .about_image {
-  max-width: 400px;
-  max-height: 500px;
-  border: 2px solid #EDF5E1;
-  border-radius: 20px;
-  -webkit-box-shadow: 8px 9px 1px 0px #EDF5E1;
-  -moz-box-shadow: 8px 9px 1px 0px #EDF5E1;
-  box-shadow: 8px 9px 1px 0px #EDF5E1;
+ width: 25rem;
+height: 25rem;
 }
 
 /* ContactUs */
@@ -201,7 +197,6 @@ h6 {
   color: #EDF5E1;
 }
 .project_tab {
-  margin-top: 27rem !important;
   padding-bottom: 4rem;
   background-color: #EDF5E1 !important;
 }
@@ -274,7 +269,7 @@ h6 {
 
 }
 /* Bg Image */
-.bg__image {
+.bg_title {
  width: 30rem;
   height: 23rem;
  margin-top: 5rem;

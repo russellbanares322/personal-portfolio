@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiSendPlane2Line } from "react-icons/ri";
 import {
   Container,
@@ -17,6 +16,10 @@ import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
+//Api keys
+const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } =
+  process.env;
+
 function Contact() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -24,20 +27,22 @@ function Contact() {
 
   //Email JS
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
-        "service_zddbkwp",
-        "template_5fhuknd",
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
         form.current,
-        "gdw0V_Gi6oPUFqnMU"
+        REACT_APP_USER_ID
       )
       .then(
         (res) => {
           toast.success("Message sent successfully");
+          setLoading(false);
         },
         (error) => {
           toast.error("Failed to send message, please try again");
@@ -74,7 +79,7 @@ function Contact() {
               </li>
               <li className="cont__list">
                 <a
-                  href="mailto:banaresrussell11@gmail.com"
+                  href="https://www.linkedin.com/in/russell-ba%C3%B1ares-5aa044242/"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="cont__link"
@@ -85,7 +90,7 @@ function Contact() {
                   <span></span>
                   <span>
                     <i className="email">
-                      <FaEnvelope size={45} />
+                      <FaLinkedinIn size={45} />
                     </i>
                   </span>
                 </a>
@@ -136,12 +141,17 @@ function Contact() {
                 style={{ backgroundColor: "#05386B", border: "none" }}
                 type="submit"
                 value="Send"
+                disabled={loading ? true : false}
               >
-                Submit
-                <RiSendPlane2Line
-                  size={20}
-                  style={{ margin: "3px", marginLeft: "5px" }}
-                />
+                {loading ? "Sending..." : "Submit"}
+                {loading ? (
+                  ""
+                ) : (
+                  <RiSendPlane2Line
+                    size={20}
+                    style={{ margin: "3px", marginLeft: "5px" }}
+                  />
+                )}
               </Button>
             </Form>
           </Col>

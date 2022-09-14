@@ -10,13 +10,11 @@ function App() {
   return (
     <div className="main_body" id="home">
       <PNavbar />
-
       <Title />
       <Col sm={12}>
         <Project />
       </Col>
       <About />
-
       <Contact />
       <footer className="text-center text-white py-2">
         &#169;All Rights Reserved 2022

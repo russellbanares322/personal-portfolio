@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import profile from "../images/picture1.jpg";
 import { Container, Image, Col, Row, Stack } from "react-bootstrap";
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import bgAbout from "../images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -17,7 +17,7 @@ function About() {
       </h1>
       <Row>
         <Col sm={6} data-aos="zoom-in">
-          <Image className="about_image" src={profile} fluid />
+          <Image className="about_image" src={bgAbout} fluid />
         </Col>
         <Col sm={6}>
           <h6
