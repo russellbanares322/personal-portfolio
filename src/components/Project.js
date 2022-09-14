@@ -23,13 +23,7 @@ function Project() {
       <Container>
         <Row className="d-flex justify-content-center" id="project">
           <Col sm={5} className="column_project" data-aos="zoom-in">
-            <ReactPlayer
-              controls
-              url={FirebaseCrud}
-              width="399px"
-              height="260px"
-              className="react_player"
-            />
+            <ReactPlayer controls url={FirebaseCrud} className="react_player" />
             <p className="mt-3 project_name">ReactJS Firebase Crud</p>
             <p className="project_details">
               A project that you can create, read and update. It also has an
@@ -66,8 +60,6 @@ function Project() {
             <ReactPlayer
               controls
               url={CryptoTracker}
-              width="399px"
-              height="260px"
               className="react_player"
             />
             <p className="mt-3 project_name">Crypto Currency Tracker</p>

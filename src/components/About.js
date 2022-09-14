@@ -41,19 +41,19 @@ function About() {
         className="d-flex justify-content-center"
         direction="horizontal"
         data-aos="zoom-in-up"
-        gap={5}
+        gap={3}
       >
         <div>
-          <FaReact size={80} className="react_logo" />
+          <FaReact size={60} className="react_logo" />
         </div>
         <div>
-          <FaCss3Alt size={80} className="css_logo" />
+          <FaCss3Alt size={60} className="css_logo" />
         </div>
         <div>
-          <FaHtml5 size={80} className="html_logo" />
+          <FaHtml5 size={60} className="html_logo" />
         </div>
         <div>
-          <IoLogoJavascript size={80} className="js_logo" />
+          <IoLogoJavascript size={60} className="js_logo" />
         </div>
       </Stack>
     </Container>

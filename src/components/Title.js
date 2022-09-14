@@ -15,9 +15,7 @@ const Title = () => {
           <Row>
             <Col className="mt-1" sm={6}>
               <h1 className="p_title" data-aos="fade-right">
-                <span style={{ fontSize: "3rem", fontWeight: "600" }}>
-                  Hi, I' am
-                </span>
+                <span>Hi, I' am</span>
               </h1>
               <h1 className="p_title1" data-aos="fade-right">
                 Russell
@@ -27,7 +25,7 @@ const Title = () => {
               </h1>
             </Col>
             <Col sm={6} data-aos="fade-up">
-              <Image src={bgTitle} className="bg_title" />
+              <Image src={bgTitle} className="bg_title" fluid />
             </Col>
           </Row>
         </Col>
