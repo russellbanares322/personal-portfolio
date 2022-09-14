@@ -28,7 +28,7 @@ function About() {
             }}
             data-aos="fade-up"
           >
-            Passionate junior front-end web developer, always loves to learn new
+            Passionate junior front-end web developer, loves to learn new
             skills.
           </h6>
         </Col>
