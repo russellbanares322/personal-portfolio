@@ -662,9 +662,9 @@ transition: 0.3s ease-in-out;
     color: #EDF5E1;
     -webkit-text-stroke: 0.1px #05386B;
   }
-  .bg_title {
+  .bg_title { 
     width: 25rem;
-     height: 25rem;
+     height: 30rem;
    }
    
    .contact__me .cont__list {
@@ -707,10 +707,8 @@ transition: 0.3s ease-in-out;
   }
 
 .react_player {
-  padding-left: 2rem !important; 
   height: 15rem !important;
-  width: 26rem !important;
-  border-radius: 1rem !important;
+  width: 17rem !important;
 }
 .column_project {
   background-color: #EDF5E1;
@@ -719,7 +717,7 @@ transition: 0.3s ease-in-out;
   box-shadow: 14px -2px 0px 7px #8EE4AF;
   border-radius: 50px;
   margin-top: 30px !important;
-  margin:1rem;
+  margin:1.4rem;
   margin-bottom: 30px !important;
   transition: 0.3s ease-in-out;
 }
