@@ -21,7 +21,7 @@ function About() {
         </Col>
         <Col sm={6}>
           <h6
-            className="mt-5"
+            className="about_text"
             style={{
               fontWeight: "300",
               fontSize: "1.3rem",

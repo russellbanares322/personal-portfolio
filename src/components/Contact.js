@@ -89,7 +89,7 @@ function Contact() {
                   <span></span>
                   <span></span>
                   <span>
-                    <i className="email">
+                    <i className="linkedin">
                       <FaLinkedinIn size={45} />
                     </i>
                   </span>

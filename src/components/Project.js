@@ -22,7 +22,7 @@ function Project() {
       </h1>
       <Container>
         <Row className="d-flex justify-content-center" id="project">
-          <Col sm={5} className="column_project" data-aos="zoom-in">
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer controls url={FirebaseCrud} className="react_player" />
             <p className="mt-3 project_name">ReactJS Firebase Crud</p>
             <p className="project_details">
@@ -56,7 +56,7 @@ function Project() {
               </a>
             </a>
           </Col>
-          <Col sm={5} className="column_project" data-aos="zoom-in">
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer
               controls
               url={CryptoTracker}
@@ -94,7 +94,7 @@ function Project() {
               </a>
             </a>
           </Col>
-          <Col sm={5} className="column_project" data-aos="zoom-in">
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer
               controls
               url={BudgetPlanner}
@@ -128,7 +128,7 @@ function Project() {
               </Button>
             </a>
           </Col>
-          <Col sm={5} className="column_project" data-aos="zoom-in">
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer
               controls
               url={TaskManager}
@@ -156,7 +156,7 @@ function Project() {
               </Button>
             </a>
           </Col>
-          <Col sm={5} className="column_project" data-aos="zoom-in">
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer
               controls
               url={Ecommerce}
