@@ -17,7 +17,7 @@ const Title = () => {
               <h1 className="p_title" data-aos="fade-right">
                 <span>Hi, I' am</span>
               </h1>
-              <h1 className="p_title1" data-aos="fade-right">
+              <h1 className="p_title1" data-aos="fade-down">
                 Russell
               </h1>
               <h1 className="p_text" data-aos="fade-up">

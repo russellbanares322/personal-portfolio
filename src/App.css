@@ -59,11 +59,11 @@
   -webkit-text-stroke: 1.5px #05386B;
   color: #EDF5E1;
 }
-.technologies_header_text {
+.skills_header_text {
   margin-top: 40px !important;
   margin-bottom: 50px !important;
   font-size: 50px;
-  -webkit-text-stroke: 1.5px #05386B;
+  -webkit-text-stroke: 1.2px #05386B;
   color: #EDF5E1;
 }
 .contact_header_text {
@@ -374,11 +374,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .contact__me .cont__list {
@@ -471,11 +471,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .contact__me .cont__list {
@@ -568,11 +568,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .contact__me .cont__list {
@@ -663,11 +663,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .contact__me .cont__list {
@@ -798,11 +798,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
 }
@@ -896,11 +896,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
 
@@ -909,11 +909,11 @@ transition: 0.3s ease-in-out;
     width: 25rem !important;
     height: 30rem;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 3rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .about_text {
@@ -1012,11 +1012,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .bg_title {
@@ -1024,11 +1024,11 @@ transition: 0.3s ease-in-out;
     width: 25rem !important;
     height: 30rem;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 3rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .about_text {
@@ -1130,11 +1130,11 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .bg_title {
@@ -1142,11 +1142,11 @@ transition: 0.3s ease-in-out;
     width: 25rem !important;
     height: 30rem;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 3rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .about_text {
@@ -1247,22 +1247,22 @@ transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 10px !important;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .bg_title {
     width: 30rem !important;
     height: 30rem;
   }
-  .technologies_header_text {
+  .skills_header_text {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
     font-size: 3rem;
-    -webkit-text-stroke: 1.5px #05386B;
+    -webkit-text-stroke: 1.2px #05386B;
     color: #EDF5E1;
   }
   .about_text {

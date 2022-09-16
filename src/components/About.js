@@ -34,8 +34,8 @@ function About() {
         </Col>
       </Row>
 
-      <h1 className="technologies_header_text" data-aos="fade-up">
-        Technologies i use:
+      <h1 className="skills_header_text" data-aos="fade-up">
+        My skills:
       </h1>
       <Stack
         className="d-flex justify-content-center"
@@ -44,16 +44,16 @@ function About() {
         gap={3}
       >
         <div>
-          <FaReact size={60} className="react_logo" />
+          <FaReact size={70} className="react_logo" />
         </div>
         <div>
-          <FaCss3Alt size={60} className="css_logo" />
+          <FaCss3Alt size={70} className="css_logo" />
         </div>
         <div>
-          <FaHtml5 size={60} className="html_logo" />
+          <FaHtml5 size={70} className="html_logo" />
         </div>
         <div>
-          <IoLogoJavascript size={60} className="js_logo" />
+          <IoLogoJavascript size={70} className="js_logo" />
         </div>
       </Stack>
     </Container>
