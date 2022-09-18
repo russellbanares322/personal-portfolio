@@ -11,8 +11,6 @@ import {
 } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { HashLink as Link } from "react-router-hash-link";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
@@ -157,9 +155,6 @@ function Contact() {
           </Col>
         </Row>
       </Col>
-      <Link to="#home" smooth>
-        <BsFillArrowUpCircleFill className="arrow_up" size={40} />
-      </Link>
     </Container>
   );
 }
