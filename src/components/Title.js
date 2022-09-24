@@ -31,6 +31,7 @@ const Title = () => {
         </Col>
       </Container>
     </Container>
+    
   );
 };
 
