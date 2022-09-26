@@ -13,7 +13,7 @@ const Title = () => {
       <Container>
         <Col sm={12}>
           <Row>
-            <Col className="mt-1" sm={6}>
+            <Col className="mt-5" sm={6}>
               <h1 className="p_title" data-aos="fade-right">
                 <span>Hi, I' am</span>
               </h1>
@@ -31,7 +31,6 @@ const Title = () => {
         </Col>
       </Container>
     </Container>
-    
   );
 };
 

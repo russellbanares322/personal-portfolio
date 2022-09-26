@@ -20,14 +20,7 @@ function About() {
           <Image className="about_image" src={bgAbout} fluid />
         </Col>
         <Col sm={6}>
-          <h6
-            className="about_text"
-            style={{
-              fontWeight: "300",
-              fontSize: "1.3rem",
-            }}
-            data-aos="fade-up"
-          >
+          <h6 className="about_text" data-aos="fade-up">
             Passionate junior front-end web developer, loves to learn new
             skills.
           </h6>

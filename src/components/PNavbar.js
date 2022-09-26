@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
+import {
+  AiOutlineContacts,
+  AiOutlineDownload,
+  AiOutlineProject,
+  AiOutlineQuestionCircle,
+} from "react-icons/ai";
 import logo from "../images/logo.png";
 import { Button, Container, Image, Nav, Navbar } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
@@ -15,7 +21,7 @@ const PNavbar = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="nav">
+      <Navbar expand="lg" className="nav" fixed="top">
         <Container>
           <Navbar.Brand>
             <Image src={logo} className="logo" />
@@ -43,17 +49,20 @@ const PNavbar = () => {
             <Nav className="me-auto">
               <Nav.Link className="d-flex justify-content-center">
                 <Link to="#project" smooth className="link_nav a">
-                  Project
+                  <AiOutlineProject className="mx-1 mb-1" />
+                  Projects
                 </Link>
               </Nav.Link>
               <Nav.Link className="d-flex justify-content-center">
                 <Link to="#about" smooth className="link_nav a">
+                  <AiOutlineQuestionCircle className="mx-1 mb-1" />
                   About
                 </Link>
               </Nav.Link>
 
               <Nav.Link className="d-flex justify-content-center">
                 <Link to="#contact" smooth className="link_nav a">
+                  <AiOutlineContacts className="mx-1 mb-1" />
                   Contact
                 </Link>
               </Nav.Link>
@@ -73,6 +82,7 @@ const PNavbar = () => {
                   }}
                 >
                   Download CV
+                  <AiOutlineDownload className="mx-1 mb-1" size={20} />
                 </Button>
               </a>
             </Nav>
