@@ -4,6 +4,7 @@ import CryptoTracker from "../components/projectVids/Crypto-App.mkv";
 import BudgetPlanner from "../components/projectVids/budget-planner.mp4";
 import TaskManager from "../components/projectVids/taskmanager.mp4";
 import FirebaseCrud from "../components/projectVids/firebase-crud.mkv";
+import GamesListApp from "../components/projectVids/Games_List_App.mkv";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { RiCodeSSlashFill } from "react-icons/ri";
@@ -26,8 +27,8 @@ function Project() {
             <ReactPlayer controls url={FirebaseCrud} className="react_player" />
             <p className="mt-3 project_name">ReactJS Firebase Crud</p>
             <p className="project_details">
-              A project that you can create, read and update. It also has an
-              image upload functionality
+              A project that you can create, read, update and delete record. It
+              also has an image upload functionality
             </p>
             <p className="project_tool">ReactJS | Firebase</p>
             <a
@@ -54,6 +55,30 @@ function Project() {
                   <RiCodeSSlashFill size={20} style={{ marginLeft: "2px" }} />
                 </Button>
               </a>
+            </a>
+          </Col>
+          <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
+            <ReactPlayer controls url={GamesListApp} className="react_player" />
+            <p className="mt-3 project_name">Games List App</p>
+            <p className="project_details">
+              Displaying different types of games with pagination, and axios
+              library for api fetching.
+            </p>
+            <p className="project_tool">ReactJS | Axios</p>
+
+            <Button className="mb-5 button_live" disabled>
+              Live View
+              <FaRegEyeSlash size={20} style={{ marginLeft: "2px" }} />
+            </Button>
+            <a
+              href="https://github.com/russellbanares322/games-list-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline-dark" className=" mb-5">
+                Source Code
+                <RiCodeSSlashFill size={20} style={{ marginLeft: "2px" }} />
+              </Button>
             </a>
           </Col>
           <Col sm={5} md={5} className="column_project" data-aos="zoom-in">

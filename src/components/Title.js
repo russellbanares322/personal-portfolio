@@ -15,7 +15,7 @@ const Title = () => {
           <Row>
             <Col className="mt-5" sm={6}>
               <h1 className="p_title" data-aos="fade-right">
-                <span>Hi, I' am</span>
+                <span>Hi, I am</span>
               </h1>
               <h1 className="p_title1" data-aos="fade-down">
                 Russell

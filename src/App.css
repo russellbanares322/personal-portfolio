@@ -266,7 +266,7 @@ height: 25rem;
 
 .arrow_up {
   position: fixed;
-  bottom:40px;
+  bottom:50px;
   left:30px;
   color: #05386B;
   cursor: pointer !important;
