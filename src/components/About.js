@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function About() {
+  //Animate on Scroll
   useEffect(() => {
     Aos.init({ duration: 2000 });
   });

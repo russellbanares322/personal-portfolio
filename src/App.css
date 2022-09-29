@@ -8,6 +8,11 @@
 .logo {
  width: 4rem;
  height: 3rem;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+}
+.logo:hover {
+transform: rotate(-6deg);
 }
 .title{
   height: 50rem !important;
@@ -302,7 +307,6 @@ transition: 0.3s ease-in-out;
 .js_logo {
   color:whitesmoke;
   transition: 0.5s ease-in-out;
-
 }
 
 .react_logo:hover {
@@ -312,17 +316,14 @@ transition: 0.3s ease-in-out;
 .css_logo:hover {
   color: #2E49D4;
   transform: translateY(-13px);
-
 }
 .html_logo:hover {
   color:#EB5403;
   transform: translateY(-13px);
-
 }
 .js_logo:hover {
   color:#EAD41C;
   transform: translateY(-13px);
-
 }
 
 /* Media Queries */
