@@ -27,7 +27,7 @@ function About() {
             skills.
           </h6>
           <h1 className="skills_header_text pt-5" data-aos="fade-up">
-            My skills:
+            TECH STACK
           </h1>
           <Stack
             className="d-flex justify-content-center"
