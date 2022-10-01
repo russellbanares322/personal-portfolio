@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Image, Col, Row, Stack } from "react-bootstrap";
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { SiFirebase } from "react-icons/si";
 import bgAbout from "../images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -32,19 +33,22 @@ function About() {
             className="d-flex justify-content-center"
             direction="horizontal"
             data-aos="zoom-in-up"
-            gap={3}
+            gap={2}
           >
             <div>
-              <FaReact size={70} className="react_logo" />
+              <FaReact size={50} className="react_logo" />
             </div>
             <div>
-              <FaCss3Alt size={70} className="css_logo" />
+              <FaCss3Alt size={50} className="css_logo" />
             </div>
             <div>
-              <FaHtml5 size={70} className="html_logo" />
+              <FaHtml5 size={50} className="html_logo" />
             </div>
             <div>
-              <IoLogoJavascript size={70} className="js_logo" />
+              <IoLogoJavascript size={50} className="js_logo" />
+            </div>
+            <div>
+              <SiFirebase size={50} className="firebase_logo" />
             </div>
           </Stack>
         </Col>

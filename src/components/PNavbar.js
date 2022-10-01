@@ -75,13 +75,13 @@ const PNavbar = () => {
                 style={{ listStyle: "none" }}
               >
                 <Button
-                  className="px-4"
+                  className="px-3"
                   style={{
                     backgroundColor: "#05386B",
                     border: "none",
                   }}
                 >
-                  Download CV
+                  Resume
                   <AiOutlineDownload className="mx-1 mb-1" size={20} />
                 </Button>
               </a>

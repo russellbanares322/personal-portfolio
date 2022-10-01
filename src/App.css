@@ -308,6 +308,10 @@ transition: 0.3s ease-in-out;
   color:whitesmoke;
   transition: 0.5s ease-in-out;
 }
+.firebase_logo {
+  color:whitesmoke;
+  transition: 0.5s ease-in-out;
+}
 
 .react_logo:hover {
   color: #5CCFEE;
@@ -323,6 +327,10 @@ transition: 0.3s ease-in-out;
 }
 .js_logo:hover {
   color:#EAD41C;
+  transform: translateY(-13px);
+}
+.firebase_logo:hover {
+  color:#F2C12B;
   transform: translateY(-13px);
 }
 
