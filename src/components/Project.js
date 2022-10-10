@@ -65,11 +65,16 @@ function Project() {
               library for api fetching.
             </p>
             <p className="project_tool">ReactJS | Axios</p>
-
-            <Button className="mb-5 button_live" disabled>
-              Live View
-              <FaRegEyeSlash size={20} style={{ marginLeft: "2px" }} />
-            </Button>
+            <a
+              href=" https://games-list-viewer.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="mb-5 button_live">
+                Live View
+                <FaRegEye size={20} style={{ marginLeft: "2px" }} />
+              </Button>
+            </a>
             <a
               href="https://github.com/russellbanares322/games-list-app"
               target="_blank"
