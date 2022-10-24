@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 import {
   AiOutlineContacts,
@@ -29,7 +29,9 @@ const PNavbar = () => {
     }
   };
 
-  window.addEventListener("scroll", handleChangeBg);
+  useEffect(() => {
+    window.addEventListener("scroll", handleChangeBg);
+  }, []);
 
   return (
     <>
@@ -40,7 +42,7 @@ const PNavbar = () => {
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={handleToggle}
-            style={{ border: "0px", color: "#EDF5E1" }}
+            style={{ border: "none", color: navbar ? "#EDF5E1" : "#5CDB95" }}
             aria-controls="basic-navbar-nav"
           >
             {isToggle ? (

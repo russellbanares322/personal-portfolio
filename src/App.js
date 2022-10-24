@@ -5,7 +5,7 @@ import Project from "./components/Project";
 import { Col } from "react-bootstrap";
 import Title from "./components/Title";
 import PNavbar from "./components/PNavbar";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { HiOutlineChevronUp } from "react-icons/hi";
 import { HashLink as Link } from "react-router-hash-link";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         &#169;All Rights Reserved 2022
       </footer>
       <Link to="#home" smooth>
-        <BsFillArrowUpCircleFill className="arrow_up" size={35} />
+        <HiOutlineChevronUp className="arrow_up" size={35} />
       </Link>
     </div>
   );
