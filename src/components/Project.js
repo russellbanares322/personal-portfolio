@@ -24,7 +24,13 @@ function Project() {
       <Container>
         <Row className="d-flex justify-content-center" id="project">
           <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
-            <ReactPlayer controls url={FirebaseCrud} className="react_player" />
+            <ReactPlayer
+              controls
+              url={FirebaseCrud}
+              className="react_player"
+              width="100%"
+              height="100%"
+            />
             <p className="mt-3 project_name">ReactJS Firebase Crud</p>
             <p className="project_details">
               A project that you can create, read, update and delete record. It
@@ -58,7 +64,13 @@ function Project() {
             </a>
           </Col>
           <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
-            <ReactPlayer controls url={GamesListApp} className="react_player" />
+            <ReactPlayer
+              controls
+              url={GamesListApp}
+              className="react_player"
+              width="100%"
+              height="100%"
+            />
             <p className="mt-3 project_name">Games List App</p>
             <p className="project_details">
               Displaying different types of games with pagination, and axios
@@ -91,6 +103,8 @@ function Project() {
               controls
               url={CryptoTracker}
               className="react_player"
+              width="100%"
+              height="100%"
             />
             <p className="mt-3 project_name">Crypto Currency Tracker</p>
             <p className="project_details">
@@ -128,8 +142,8 @@ function Project() {
             <ReactPlayer
               controls
               url={BudgetPlanner}
-              width="399px"
-              height="260px"
+              width="100%"
+              height="100%"
               className="react_player"
             />
             <p className="mt-3 project_name">Budget Tracker</p>
@@ -162,8 +176,8 @@ function Project() {
             <ReactPlayer
               controls
               url={TaskManager}
-              width="399px"
-              height="260px"
+              width="100%"
+              height="100%"
               className="react_player"
             />
             <p className="mt-3 project_name">Task Manager</p>
@@ -190,8 +204,8 @@ function Project() {
             <ReactPlayer
               controls
               url={Ecommerce}
-              width="399px"
-              height="260px"
+              width="100%"
+              height="100%"
               className="react_player"
             />
             <p className="mt-3 project_name">

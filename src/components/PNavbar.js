@@ -13,15 +13,27 @@ import resume from "../file/Russell_Banares.pdf";
 
 const PNavbar = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   //Hamburger Toggle
   const handleToggle = () => {
     setIsToggle(!isToggle);
   };
 
+  //Navbar onScroll
+  const handleChangeBg = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleChangeBg);
+
   return (
     <>
-      <Navbar expand="lg" className="nav" fixed="top">
+      <Navbar expand="lg" className={navbar ? "nav active" : "nav"} fixed="top">
         <Container>
           <Navbar.Brand>
             <Image src={logo} className="logo" />
