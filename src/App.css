@@ -17,25 +17,35 @@ transform: rotate(-6deg);
 
 /* Navbar */
 .nav{
-  background: transparent;
+  background-color: #5CDB95;
   transition: 0.3s ease-in-out;
 }
 .nav.active {
-  background-color: #EDF5E1 !important;
+  background: rgba(243, 243, 243, 0.86);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.1px);
+  -webkit-backdrop-filter: blur(1.1px);
   -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   
 }
-.a{
+.a,.b{
   text-decoration: none;
   transition:  0.3s ease-in-out;
 }
+.b:hover {
+  color: #5CDB95!important;
+  cursor: pointer;
+}
+.link_navB {
+  color: #05386B !important;
+}
 .a:hover{
-  color: #01C088 !important;
+  color: #05386B !important;
 }
 .link_nav {
-  color: #05386B !important;
+  color: #F3F3F3 !important;
   cursor: pointer;
 }
 .brand_img {

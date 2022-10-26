@@ -62,20 +62,32 @@ const PNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="d-flex justify-content-center">
-                <Link to="#project" smooth className="link_nav a">
+                <Link
+                  to="#project"
+                  smooth
+                  className={navbar ? "link_navB b" : "link_nav a"}
+                >
                   <AiOutlineProject className="mx-1 mb-1" />
                   Projects
                 </Link>
               </Nav.Link>
               <Nav.Link className="d-flex justify-content-center">
-                <Link to="#about" smooth className="link_nav a">
+                <Link
+                  to="#about"
+                  smooth
+                  className={navbar ? "link_navB b" : "link_nav a"}
+                >
                   <AiOutlineQuestionCircle className="mx-1 mb-1" />
                   About
                 </Link>
               </Nav.Link>
 
               <Nav.Link className="d-flex justify-content-center">
-                <Link to="#contact" smooth className="link_nav a">
+                <Link
+                  to="#contact"
+                  smooth
+                  className={navbar ? "link_navB b" : "link_nav a"}
+                >
                   <AiOutlineContacts className="mx-1 mb-1" />
                   Contact
                 </Link>
