@@ -21,7 +21,7 @@ transform: rotate(-6deg);
   transition: 0.3s ease-in-out;
 }
 .nav.active {
-  background: rgba(243, 243, 243, 0.86);
+  background: #EDF5E1;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.1px);
   -webkit-backdrop-filter: blur(1.1px);
