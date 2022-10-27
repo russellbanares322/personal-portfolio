@@ -21,10 +21,11 @@ transform: rotate(-6deg);
   transition: 0.3s ease-in-out;
 }
 .nav.active {
-  background: #F3F3F3;
+  background: rgba(243, 243, 243, 0.71);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.1px);
-  -webkit-backdrop-filter: blur(1.1px);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
   -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
