@@ -13,6 +13,7 @@ import resume from "../file/Russell_Banares.pdf";
 
 const PNavbar = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [isActive, setIsActive] = useState("");
   const [navbar, setNavbar] = useState(false);
 
   //Hamburger Toggle
@@ -24,6 +25,16 @@ const PNavbar = () => {
   const handleChangeBg = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
+      setIsActive("");
+      if (window.scrollY >= 600 && window.scrollY <= 2700) {
+        setIsActive("Project");
+      }
+      if (window.scrollY >= 2700 && window.scrollY <= 3300) {
+        setIsActive("About");
+      }
+      if (window.scrollY > 3300) {
+        setIsActive("Contact");
+      }
     } else {
       setNavbar(false);
     }
@@ -65,7 +76,13 @@ const PNavbar = () => {
                 <Link
                   to="#project"
                   smooth
-                  className={navbar ? "link_navB b" : "link_nav a"}
+                  className={
+                    isActive === "Project"
+                      ? "nav_active"
+                      : "" || navbar
+                      ? "link_navB b"
+                      : "link_nav a"
+                  }
                 >
                   <AiOutlineProject className="mx-1 mb-1" />
                   Projects
@@ -75,7 +92,13 @@ const PNavbar = () => {
                 <Link
                   to="#about"
                   smooth
-                  className={navbar ? "link_navB b" : "link_nav a"}
+                  className={
+                    isActive === "About"
+                      ? "nav_active"
+                      : "" || navbar
+                      ? "link_navB b"
+                      : "link_nav a"
+                  }
                 >
                   <AiOutlineQuestionCircle className="mx-1 mb-1" />
                   About
@@ -86,7 +109,13 @@ const PNavbar = () => {
                 <Link
                   to="#contact"
                   smooth
-                  className={navbar ? "link_navB b" : "link_nav a"}
+                  className={
+                    isActive === "Contact"
+                      ? "nav_active"
+                      : "" || navbar
+                      ? "link_navB b"
+                      : "link_nav a"
+                  }
                 >
                   <AiOutlineContacts className="mx-1 mb-1" />
                   Contact
