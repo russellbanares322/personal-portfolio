@@ -26,13 +26,21 @@ const PNavbar = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
       setIsActive("");
-      if (window.scrollY >= 600 && window.scrollY <= 2700) {
+      if (
+        window.scrollY >= 600 &&
+        window.scrollY <= 2700 &&
+        window.innerWidth > 500
+      ) {
         setIsActive("Project");
       }
-      if (window.scrollY >= 2700 && window.scrollY <= 3300) {
+      if (
+        window.scrollY >= 2700 &&
+        window.scrollY <= 3300 &&
+        window.innerWidth > 500
+      ) {
         setIsActive("About");
       }
-      if (window.scrollY > 3300) {
+      if (window.scrollY > 3300 && window.innerWidth > 500) {
         setIsActive("Contact");
       }
     } else {
