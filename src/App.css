@@ -377,6 +377,17 @@ transition: 0.3s ease-in-out;
 /* Media Queries */
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
+  .contact_header_text {
+    margin-top: 90px !important;
+    padding-bottom: 3rem!important;
+    font-size: 40px;
+    padding-top: 3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 0.8px #379683;
+    color: #05386B;
+  }
+
   .p_title {
     font-size: 2rem !important;
     padding-top: 40px;

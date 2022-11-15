@@ -51,7 +51,7 @@ function Contact() {
   return (
     <Container fluid className="contact_tab" id="contact">
       <h1 className="contact_header_text text-center" data-aos="fade-up">
-        CONTACT
+        GET IN TOUCH
       </h1>
       <Col className="mt-5" sm={12}>
         <Row>

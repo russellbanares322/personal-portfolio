@@ -19,9 +19,13 @@ import resume from "../file/Russell_Banares.pdf";
 
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
-  const [isActive, setIsActive] = useState("");
+  const [isActive, setIsActive] = useState("Portfolio");
   const [navbar, setNavbar] = useState(false);
 
+  //Web title
+  useEffect(() => {
+    document.title = "Russell Banares | " + isActive;
+  }, [isActive]);
   //Hamburger Toggle
   const handleToggle = () => {
     setIsToggle(!isToggle);
@@ -31,13 +35,13 @@ const Navbar = () => {
   const handleChangeBg = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
-      setIsActive("");
+      setIsActive("Portfolio");
       if (
         window.scrollY >= 600 &&
         window.scrollY <= 2700 &&
         window.innerWidth > 599
       ) {
-        setIsActive("Project");
+        setIsActive("Projects");
       }
       if (
         window.scrollY >= 2700 &&
@@ -95,7 +99,7 @@ const Navbar = () => {
                   to="#project"
                   smooth
                   className={
-                    isActive === "Project"
+                    isActive === "Projects"
                       ? "nav_active"
                       : "" || navbar
                       ? "link_navB b"
@@ -103,7 +107,7 @@ const Navbar = () => {
                   }
                 >
                   <AiOutlineProject className="mx-1 mb-1" />
-                  Projects
+                  Project
                 </Link>
               </Nav.Link>
               <Nav.Link className="d-flex justify-content-center">
