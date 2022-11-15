@@ -4,14 +4,14 @@ import Contact from "./components/Contact";
 import Project from "./components/Project";
 import { Col } from "react-bootstrap";
 import Title from "./components/Title";
-import PNavbar from "./components/PNavbar";
+import Navbar from "./components/Navbar";
 import { HiOutlineChevronUp } from "react-icons/hi";
 import { HashLink as Link } from "react-router-hash-link";
 
 function App() {
   return (
     <div className="main_body" id="home">
-      <PNavbar />
+      <Navbar />
       <Title />
       <Col sm={12}>
         <Project />

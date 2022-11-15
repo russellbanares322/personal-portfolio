@@ -7,11 +7,17 @@ import {
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import logo from "../images/logo.png";
-import { Button, Container, Image, Nav, Navbar } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Image,
+  Nav,
+  Navbar as NavbarBs,
+} from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
 import resume from "../file/Russell_Banares.pdf";
 
-const PNavbar = () => {
+const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
   const [isActive, setIsActive] = useState("");
   const [navbar, setNavbar] = useState(false);
@@ -54,12 +60,16 @@ const PNavbar = () => {
 
   return (
     <>
-      <Navbar expand="lg" className={navbar ? "nav active" : "nav"} fixed="top">
+      <NavbarBs
+        expand="lg"
+        className={navbar ? "nav active" : "nav"}
+        fixed="top"
+      >
         <Container>
-          <Navbar.Brand>
+          <NavbarBs.Brand>
             <Image src={logo} className="logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle
+          </NavbarBs.Brand>
+          <NavbarBs.Toggle
             onClick={handleToggle}
             style={{ border: "none", color: navbar ? "#EDF5E1" : "#5CDB95" }}
             aria-controls="basic-navbar-nav"
@@ -77,8 +87,8 @@ const PNavbar = () => {
                 style={{ color: "#05386B " }}
               />
             )}
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
+          </NavbarBs.Toggle>
+          <NavbarBs.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="d-flex justify-content-center">
                 <Link
@@ -149,11 +159,11 @@ const PNavbar = () => {
                 </Button>
               </a>
             </Nav>
-          </Navbar.Collapse>
+          </NavbarBs.Collapse>
         </Container>
-      </Navbar>
+      </NavbarBs>
     </>
   );
 };
 
-export default PNavbar;
+export default Navbar;
