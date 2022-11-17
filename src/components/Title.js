@@ -11,24 +11,22 @@ const Title = () => {
   return (
     <Container fluid className="title">
       <Container>
-        <Col sm={12}>
-          <Row>
-            <Col className="mt-5" sm={6}>
-              <h1 className="p_title" data-aos="fade-right">
-                <span>Hi, I am</span>
-              </h1>
-              <h1 className="p_title1" data-aos="fade-down">
-                Russell
-              </h1>
-              <h1 className="p_text" data-aos="fade-up">
-                a showcase of my projects and my abilities.
-              </h1>
-            </Col>
-            <Col sm={6} data-aos="fade-up">
-              <Image src={bgTitle} className="bg_title" fluid />
-            </Col>
-          </Row>
-        </Col>
+        <Row lg={2} md={2} sm={1} xs={1} className="me-auto">
+          <Col className="mt-5">
+            <h1 className="p_title" data-aos="fade-right">
+              <span>Hi, I am</span>
+            </h1>
+            <h1 className="p_title1" data-aos="fade-down">
+              Russell
+            </h1>
+            <h1 className="p_text" data-aos="fade-up">
+              a showcase of my projects and my abilities.
+            </h1>
+          </Col>
+          <Col data-aos="fade-up" className="mt-3">
+            <Image src={bgTitle} className="bg_title" fluid />
+          </Col>
+        </Row>
       </Container>
     </Container>
   );
