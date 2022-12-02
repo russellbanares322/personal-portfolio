@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 import Ecommerce from "../components/projectVids/E-commerce.mkv";
-import CryptoTracker from "../components/projectVids/Crypto-App.mkv";
+import CryptoTracker from "../components/projectVids/Crypto-App.mp4";
 import BudgetPlanner from "../components/projectVids/budget-planner.mp4";
 import TaskManager from "../components/projectVids/taskmanager.mp4";
 import FirebaseCrud from "../components/projectVids/firebase-crud.mkv";
@@ -113,7 +113,7 @@ function Project() {
             </p>
             <p className="project_tool">ReactJS | Axios</p>
             <a
-              href="https://russellbanares322.github.io/cryptotrackerapp/"
+              href="https://cryptotrackerapp-orpin.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
