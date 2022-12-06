@@ -3,7 +3,7 @@ import Ecommerce from "../components/projectVids/E-commerce.mkv";
 import CryptoTracker from "../components/projectVids/Crypto-App.mp4";
 import BudgetPlanner from "../components/projectVids/budget-planner.mp4";
 import TaskManager from "../components/projectVids/taskmanager.mp4";
-import FirebaseCrud from "../components/projectVids/firebase-crud.mkv";
+import FirebaseCrud from "../components/projectVids/firebase-crud.mp4";
 import GamesListApp from "../components/projectVids/Games_List_App.mkv";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
