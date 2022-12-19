@@ -336,12 +336,12 @@ transition: 0.3s ease-in-out;
 }
 .css_logo{
   color:whitesmoke;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .html_logo{
   color:whitesmoke;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .js_logo {
@@ -355,25 +355,74 @@ transition: 0.3s ease-in-out;
 
 .react_logo:hover {
   color: #5CCFEE;
-  transform: translateY(-13px);
+  transform: translateY(-3px);
 }
+.react_wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+}
+
 .css_logo:hover {
   color: #2E49D4;
-  transform: translateY(-13px);
+  transform: translateY(-3px);
+}
+.css_wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.7rem 0.8rem 1.7rem;
 }
 .html_logo:hover {
   color:#EB5403;
-  transform: translateY(-13px);
+  transform: translateY(-3px);
+}
+.html_wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.7rem 0.8rem 1.7rem;
 }
 .js_logo:hover {
   color:#EAD41C;
-  transform: translateY(-13px);
+  transform: translateY(-3px);
+}
+.js_wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
 }
 .firebase_logo:hover {
   color:#F2C12B;
-  transform: translateY(-13px);
+  transform: translateY(-5px);
+}
+.firebase_wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
 }
 
+.react_wrapper, .css_wrapper, .html_wrapper, .js_wrapper, .firebase_wrapper > p {
+  color : whitesmoke;
+}
 /* Media Queries */
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
