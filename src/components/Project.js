@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import Ecommerce from "../components/projectVids/E-commerce.mkv";
+import Property_Management_System from "../components/projectVids/Property_Management_System.mp4";
 import CryptoTracker from "../components/projectVids/Crypto-App.mp4";
 import BudgetPlanner from "../components/projectVids/budget-planner.mp4";
 import TaskManager from "../components/projectVids/taskmanager.mp4";
@@ -203,24 +203,26 @@ function Project() {
           <Col sm={5} md={5} className="column_project" data-aos="zoom-in">
             <ReactPlayer
               controls
-              url={Ecommerce}
+              url={Property_Management_System}
               width="100%"
               height="100%"
               className="react_player"
+              muted={true}
             />
-            <p className="mt-3 project_name">
-              Responsive E-commerce Website Boilerplate
-            </p>
+            <p className="mt-3 project_name">Property Management System</p>
             <p className="project_details">
-              Simple boilerplate for an ecommerce site
+              Our capstone project which displays different kinds of property,
+              and allowing the user to set an appointment.
             </p>
-            <p className="project_tool">HTML | CSS</p>
+            <p className="project_tool">
+              ReactJS | Firebase | EmailJS | Tawk.to Live Chat
+            </p>
             <Button className="mb-5 button_live disabled">
               Live View
               <FaRegEyeSlash size={20} style={{ marginLeft: "2px" }} />
             </Button>
             <a
-              href="https://github.com/russellbanares322/Russ-Ecommerce-Website"
+              href="https://github.com/russellbanares322/propertyfinder-app"
               target="_blank"
               rel="noopener noreferrer"
             >

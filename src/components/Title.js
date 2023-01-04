@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Title = () => {
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   });
