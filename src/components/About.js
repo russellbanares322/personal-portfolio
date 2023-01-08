@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Image, Col, Row, Stack } from "react-bootstrap";
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiFirebase } from "react-icons/si";
+import { SiFirebase, SiGit } from "react-icons/si";
 import bgAbout from "../images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +27,7 @@ function About() {
             skills.
           </h6>
           <h1 className="skills_header_text pt-5" data-aos="fade-up">
-            TECH STACK
+            SKILLS
           </h1>
           <Stack
             className="d-flex justify-content-center"
@@ -90,6 +90,16 @@ function About() {
                 style={{ paddingTop: "1rem" }}
               >
                 Firebase
+              </p>
+            </div>
+            <div className="git_wrapper">
+              <SiGit size={50} className="git_logo" />
+              <p
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                style={{ paddingTop: "1rem" }}
+              >
+                Git
               </p>
             </div>
           </Stack>

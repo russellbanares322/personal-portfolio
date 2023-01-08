@@ -419,9 +419,28 @@ transition: 0.3s ease-in-out;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.8rem 1.3rem 0.8rem 1.3rem;
 }
+.git_logo {
+  color: whitesmoke;
+  transition: 0.5s ease-in-out;
+}
+.git_logo:hover {
+color: #E84D31 !important;
+transform: translateY(-5px);
+}
 
-.react_wrapper, .css_wrapper, .html_wrapper, .js_wrapper, .firebase_wrapper > p {
-  color : whitesmoke;
+.git_wrapper{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba (0,0,0,0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+}
+
+.react_wrapper, .css_wrapper, .html_wrapper, .js_wrapper, .firebase_wrapper, .git_wrapper > p {
+  color : #F2F2F2;
+  font-size: 0.9rem !important;
 }
 /* Media Queries */
 
@@ -574,7 +593,16 @@ transition: 0.3s ease-in-out;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0.8rem 1.1rem 0.8rem 1.1rem;
+    padding: 0.8rem 0.9rem 0.8rem 0.9rem;
+  }
+  .git_wrapper{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba (0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.8rem 1.3rem 0.8rem 1.3rem;
   }
 }
 @media only screen and (min-width: 360px){
