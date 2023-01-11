@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=VT323&display=swap');
 *{
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
+::-webkit-scrollbar {
+  width:0.7vw;
+}
+::-webkit-scrollbar-track {
+  background-color: #F3F3F3;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #05386B;
+  border-radius: 1rem;
+  height: 2rem;
+}
+
 .main_body {
   background-color: #5CDB95;
 }
@@ -103,8 +115,6 @@ transform: rotate(-6deg);
 }
 .arrow_up:hover {
   transform: translateY(-7px);
-  
-
 }
 
 .title{
@@ -201,9 +211,18 @@ transform: rotate(-6deg);
   box-shadow: 14px -2px 0px 7px #8EE4AF;
   border-radius: 50px;
   margin-top: 30px !important;
-  margin:auto;
   margin-bottom: 30px !important;
   transition: 0.3s ease-in-out;
+}
+
+.react_player {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:0.6rem !important;
+  margin-top: 1rem;
 }
 
 h6 {
@@ -331,8 +350,8 @@ height: 25rem;
 
 /* Tech Logo */
 .react_logo{
-color:whitesmoke;
-transition: 0.3s ease-in-out;
+  color:whitesmoke;
+  transition: 0.3s ease-in-out;
 }
 .css_logo{
   color:whitesmoke;
