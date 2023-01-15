@@ -38,19 +38,19 @@ const Navbar = () => {
       setIsActive("Portfolio");
       if (
         window.scrollY >= 600 &&
-        window.scrollY <= 2700 &&
+        window.scrollY <= 2500 &&
         window.innerWidth > 599
       ) {
         setIsActive("Projects");
       }
       if (
-        window.scrollY >= 2700 &&
-        window.scrollY <= 3300 &&
+        window.scrollY >= 2000 &&
+        window.scrollY <= 2600 &&
         window.innerWidth > 599
       ) {
         setIsActive("About");
       }
-      if (window.scrollY > 3300 && window.innerWidth > 599) {
+      if (window.scrollY > 2700 && window.innerWidth > 599) {
         setIsActive("Contact");
       }
     } else {

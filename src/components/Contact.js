@@ -38,11 +38,11 @@ function Contact() {
         REACT_APP_USER_ID
       )
       .then(
-        (res) => {
+        () => {
           toast.success("Message sent successfully");
           setLoading(false);
         },
-        (error) => {
+        () => {
           toast.error("Failed to send message, please try again");
         }
       );
