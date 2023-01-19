@@ -7,13 +7,7 @@ import {
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import logo from "../images/logo.png";
-import {
-  Button,
-  Container,
-  Image,
-  Nav,
-  Navbar as NavbarBs,
-} from "react-bootstrap";
+import { Container, Image, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
 import resume from "../file/Russell_Banares.pdf";
 
@@ -151,16 +145,10 @@ const Navbar = () => {
                 download
                 style={{ listStyle: "none" }}
               >
-                <Button
-                  className="px-3"
-                  style={{
-                    backgroundColor: "#05386B",
-                    border: "none",
-                  }}
-                >
-                  Resume
+                <button className="download_btn">
+                  Download CV
                   <AiOutlineDownload className="mx-1 mb-1" size={20} />
-                </Button>
+                </button>
               </a>
             </Nav>
           </NavbarBs.Collapse>

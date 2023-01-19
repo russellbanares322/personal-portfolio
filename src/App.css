@@ -21,6 +21,39 @@
   height: 100vh;
   background-color: #EDF5E1;
 }
+.download_btn {
+  background: #5487b9;
+  color: #052749;
+  border: 0;
+  padding: 8px 12px;
+  border-bottom: 5px solid  #05386B;
+  border-left: 1px solid  #05386B;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+.download_btn:active, .live_btn:active, .source_code_btn:active, .send_btn:active{
+  border-bottom-width: 2px;
+  top: 3px;
+}
+.live_btn {
+  margin-right: 0.4rem;
+}
+.send_btn {
+  margin-bottom: 1rem !important;
+}
+.live_btn, .source_code_btn, .send_btn{
+  background: #5487b9;
+  color: #052749;
+  border: 0;
+  padding: 5px 10px;
+  border-bottom: 5px solid #05386B;
+  border-left: 1px solid #05386B;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
 
 .main_body {
   background-color: #5CDB95;
@@ -90,27 +123,6 @@
   text-decoration: none;
   color: #5CDB95;
 }
-/* .nav_active::after {
-  position:absolute;
-  content: "";
-  height: 3px;
-  width: 4%;
-  background-color: red;
-  left: 0;
-  bottom: 15px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  animation: appear 0.2s linear;
-} */
-
-/* @keyframes animation {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
 
 /*Navbar burger*/
 .close_navbar {
@@ -385,7 +397,7 @@ height: 25rem;
   border: 1px solid #EDF5E1;
   color: #EDF5E1;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   border-radius: 20px;
   box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(134, 134, 134, 0.3) -10px 10px, rgba(90, 90, 90, 0.2) -15px 15px, rgba(150, 150, 150, 0.1) -20px 20px, rgba(95, 95, 95, 0.05) -25px 25px;
 }

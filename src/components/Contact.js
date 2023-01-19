@@ -1,14 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiSendPlane2Line } from "react-icons/ri";
-import {
-  Container,
-  Col,
-  Row,
-  Form,
-  FloatingLabel,
-  Button,
-} from "react-bootstrap";
+import { Container, Col, Row, Form, FloatingLabel } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
@@ -25,11 +18,11 @@ function Contact() {
 
   //Email JS
   const form = useRef();
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
+    setIsLoading(true);
     emailjs
       .sendForm(
         REACT_APP_SERVICE_ID,
@@ -40,7 +33,7 @@ function Contact() {
       .then(
         () => {
           toast.success("Message sent successfully");
-          setLoading(false);
+          setIsLoading(false);
         },
         () => {
           toast.error("Failed to send message, please try again");
@@ -134,23 +127,18 @@ function Contact() {
                 />
               </FloatingLabel>
               <p className="feedback_text">I appreciate your feedback!</p>
-              <Button
-                className="suggestion_send d-flex justify-content-start"
-                style={{ backgroundColor: "#05386B", border: "none" }}
-                type="submit"
+              <button
                 value="Send"
-                disabled={loading ? true : false}
+                type="submit"
+                className="send_btn"
+                disabled={isLoading}
               >
-                {loading ? "Sending..." : "Submit"}
-                {loading ? (
-                  ""
-                ) : (
-                  <RiSendPlane2Line
-                    size={20}
-                    style={{ margin: "3px", marginLeft: "5px" }}
-                  />
-                )}
-              </Button>
+                {isLoading ? "Sending..." : "Submit"}
+                <RiSendPlane2Line
+                  size={20}
+                  style={{ margin: "3px", marginLeft: "5px" }}
+                />
+              </button>
             </Form>
           </Col>
         </Row>

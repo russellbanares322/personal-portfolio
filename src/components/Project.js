@@ -1,4 +1,4 @@
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { RiCodeSSlashFill } from "react-icons/ri";
 import Aos from "aos";
@@ -71,41 +71,47 @@ function Project() {
                   >
                     {project.technologies}
                   </Card.Subtitle>
-                  <a
-                    href={project.live_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      style={{ backgroundColor: "#05386B", border: "none" }}
-                      className="mx-2"
-                      disabled={project.live_link === null ? true : false}
-                      size="sm"
+                  <div className="d-flex justify-content-center align-items-center">
+                    <a
+                      href={project.live_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Live View
-                      {project.live_link === null ? (
-                        <FaRegEyeSlash
+                      <button
+                        className="live_btn"
+                        style={{
+                          cursor:
+                            project.live_link === null
+                              ? "not-allowed"
+                              : "pointer",
+                        }}
+                        disabled={project.live_link === null ? true : false}
+                      >
+                        Live View
+                        {project.live_link === null ? (
+                          <FaRegEyeSlash
+                            size={18}
+                            style={{ marginLeft: "4px" }}
+                          />
+                        ) : (
+                          <FaRegEye size={20} style={{ marginLeft: "4px" }} />
+                        )}
+                      </button>
+                    </a>
+                    <a
+                      href={project.source_code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="source_code_btn">
+                        Source Code{" "}
+                        <RiCodeSSlashFill
                           size={18}
                           style={{ marginLeft: "4px" }}
                         />
-                      ) : (
-                        <FaRegEye size={20} style={{ marginLeft: "4px" }} />
-                      )}
-                    </Button>
-                  </a>
-                  <a
-                    href={project.source_code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline-dark" size="sm">
-                      Source Code
-                      <RiCodeSSlashFill
-                        size={18}
-                        style={{ marginLeft: "4px" }}
-                      />
-                    </Button>
-                  </a>
+                      </button>
+                    </a>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
