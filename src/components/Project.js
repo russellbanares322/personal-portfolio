@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import ProjectsData from "../data/ProjectsData";
 import { MdOndemandVideo } from "react-icons/md";
 import ProjectDetails from "./ProjectDetails";
+import { toast } from "react-hot-toast";
 
 function Project() {
   const [projectData, setProjectData] = useState({});
@@ -72,32 +73,31 @@ function Project() {
                     {project.technologies}
                   </Card.Subtitle>
                   <div className="d-flex justify-content-center align-items-center">
-                    <a
-                      href={project.live_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    {project.live_link !== null ? (
+                      <a
+                        href={project.live_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="live_btn">
+                          Live View
+                          <FaRegEye size={20} style={{ marginLeft: "4px" }} />
+                        </button>
+                      </a>
+                    ) : (
                       <button
                         className="live_btn"
-                        style={{
-                          cursor:
-                            project.live_link === null
-                              ? "not-allowed"
-                              : "pointer",
-                        }}
-                        disabled={project.live_link === null ? true : false}
+                        onClick={() =>
+                          toast.error("This project has not been deployed yet.")
+                        }
                       >
                         Live View
-                        {project.live_link === null ? (
-                          <FaRegEyeSlash
-                            size={18}
-                            style={{ marginLeft: "4px" }}
-                          />
-                        ) : (
-                          <FaRegEye size={20} style={{ marginLeft: "4px" }} />
-                        )}
+                        <FaRegEyeSlash
+                          size={18}
+                          style={{ marginLeft: "4px" }}
+                        />
                       </button>
-                    </a>
+                    )}
                     <a
                       href={project.source_code}
                       target="_blank"
