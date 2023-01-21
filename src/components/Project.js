@@ -48,7 +48,11 @@ function Project() {
                   <div className="info_text_wrapper">
                     <p
                       className="info_text"
-                      onClick={() => handleShowModal(project)}
+                      onClick={() => {
+                        project.video !== null
+                          ? handleShowModal(project)
+                          : toast.error("This is still under development");
+                      }}
                     >
                       Watch Demo
                       <MdOndemandVideo
@@ -61,7 +65,7 @@ function Project() {
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Subtitle
-                    style={{ fontWeight: "200", fontSize: "0.9rem" }}
+                    style={{ fontWeight: "300", fontSize: "0.9rem" }}
                     className="my-3"
                   >
                     {project.details}
@@ -88,7 +92,7 @@ function Project() {
                       <button
                         className="live_btn"
                         onClick={() =>
-                          toast.error("This project has not been deployed yet.")
+                          toast.error("This project hasn't been deployed yet.")
                         }
                       >
                         Live View
