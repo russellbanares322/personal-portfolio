@@ -5,7 +5,7 @@ const ProjectsData = [
     details:
       "Web application that mimics the UI of Netflix, displays different types of movies using TMDB Api.",
     technologies: "ReactJS | Axios | Firebase",
-    live_link: null,
+    live_link: "https://netflix-clone-app-96hx.onrender.com/",
     source_code: "https://github.com/russellbanares322/netflix-clone",
     image: require("../assets/netflix_app.jpg"),
     video: null,
