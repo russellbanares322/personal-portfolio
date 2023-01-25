@@ -200,7 +200,7 @@
   width: 28rem;
   height: 13.3rem;
   background: black;
-  opacity: 0.8;
+  opacity: 0.6;
   display: none;
 }
 .info_text {
@@ -211,10 +211,14 @@
   color: #F3F3F3;
   font-size: medium;
   cursor: pointer;
+  font-weight: 700;
 }
 .img_wrapper {
   overflow: hidden;
   position: relative;
+}
+.project_img:hover {
+  opacity: 0.3;
 }
 .img_wrapper:hover .info_text_wrapper {
   display: block;
