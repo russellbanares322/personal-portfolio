@@ -69,7 +69,10 @@ const Navbar = () => {
           </NavbarBs.Brand>
           <NavbarBs.Toggle
             onClick={handleToggle}
-            style={{ border: "none", color: navbar ? "#EDF5E1" : "#5CDB95" }}
+            style={{
+              border: "none",
+              color: navbar ? "#EDF5E1" : "#5CDB95",
+            }}
             aria-controls="basic-navbar-nav"
           >
             {isToggle ? (

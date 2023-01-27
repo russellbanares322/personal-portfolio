@@ -33,7 +33,7 @@ function App() {
           <About />
           <Contact />
           <footer className="text-center text-white py-2">
-            &#169;All Rights Reserved 2022
+            &#169; Created by Russ
           </footer>
           <Link to="#home" smooth>
             <HiOutlineChevronUp className="arrow_up" size={35} />
