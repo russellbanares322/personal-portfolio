@@ -655,32 +655,32 @@ footer {
     background-size: cover;
   }
   .title-wrapper {
-    margin-top: 4rem;
+    margin-top: 5.1rem;
   }
   .p-title {
-    font-size: 33px;
+    font-size: 2rem;
     padding-top: 40px;
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 0.3rem;
     font-weight: 600;
     color: #EDF5E1;
     -webkit-text-stroke: 2px #05386B;
   }
   
   .p-title1 {
-    font-size: 80px;
+    font-size: 4rem;
     margin-top: 5px;
-    margin-left: 16px;
+    margin-left: 0.3rem;
     font-weight: bold;
     color: #EDF5E1;
     text-shadow: 5px 1px 0px #05386B;
   }
   .p-text {
-    font-size: 17px;
-    margin-left: 23px;
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
     font-weight: 500;
     color: #EDF5E1;
-    -webkit-text-stroke: 0.3px #05386B;
+    -webkit-text-stroke: 0.2px #05386B;
   }
   
   .title-icon {
