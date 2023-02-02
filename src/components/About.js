@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Image, Col, Row } from "react-bootstrap";
+import { Container, Image, Row } from "react-bootstrap";
 import bgAbout from "../images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,17 +15,17 @@ function About() {
       <p className="about_header_text pt-4" data-aos="fade-up">
         ABOUT
       </p>
-      <Row>
-        <Col sm={4} data-aos="zoom-in">
+      <Row sm={1} md={1} lg={2} xl={2}>
+        <div>
           <Image className="about_image" src={bgAbout} fluid />
-        </Col>
-        <Col sm={8}>
+        </div>
+        <div>
           <h6 className="about_text" data-aos="fade-up">
             Passionate junior front-end web developer, loves to learn new
             skills.
           </h6>
           <p className="skills_header_text pt-5" data-aos="fade-up">
-            SKILLS
+            TECHNOLOGIES
           </p>
           <div className="stack_wrapper">
             {techStacks.map((stack) => (
@@ -35,7 +35,7 @@ function About() {
               </div>
             ))}
           </div>
-        </Col>
+        </div>
       </Row>
     </Container>
   );
