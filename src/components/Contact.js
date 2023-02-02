@@ -22,9 +22,6 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!form.current) {
-      return toast.error("Fields cannot be left empty!");
-    }
     setIsLoading(true);
     emailjs
       .sendForm(
@@ -56,6 +53,7 @@ function Contact() {
             type="text"
             placeholder="Enter name..."
             name="user_name"
+            required
           />
         </Form.Group>
 
@@ -65,6 +63,7 @@ function Contact() {
             type="email"
             placeholder="Enter email..."
             name="user_email"
+            required
           />
         </Form.Group>
         <Form.Label>Message</Form.Label>
@@ -77,6 +76,7 @@ function Contact() {
             as="textarea"
             placeholder="Leave a comment here"
             name="message"
+            required
           />
         </FloatingLabel>
         <p className="feedback_text">I appreciate your feedback!</p>
