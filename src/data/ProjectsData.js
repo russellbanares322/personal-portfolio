@@ -1,11 +1,15 @@
-const ProjectsData = [
+import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiFirebase, SiGit } from "react-icons/si";
+
+export const projectsData = [
   {
     id: 1,
     title: "Netflix Clone",
     details:
       "Web application that mimics the UI of Netflix, displays different types of movies using TMDB Api. And allows the user to save movie to favorites.",
     technologies: "ReactJS | Axios | Firebase | ReactSplide",
-    live_link: "https://netflix-clone-app-96hx.onrender.com/",
+    live_link: "https://netflix-clone-d2z2.onrender.com/",
     source_code: "https://github.com/russellbanares322/netflix-clone",
     image: require("../assets/netflix_app.jpg"),
     video: require("../components/projectVids/netflix_clone.mp4"),
@@ -56,4 +60,41 @@ const ProjectsData = [
   },
 ];
 
-export default ProjectsData;
+export const techStacks = [
+  {
+    id: 1,
+    name: "ReactJS",
+    icon: <FaReact size={30} />,
+    // color: "#5CCFEE",
+  },
+  {
+    id: 2,
+    name: "HTML",
+    icon: <FaHtml5 size={30} />,
+    // color: "#EB5403",
+  },
+  {
+    id: 3,
+    name: "Css",
+    icon: <FaCss3Alt size={30} />,
+    // color: "#2E49D4",
+  },
+  {
+    id: 4,
+    name: "Firebase",
+    icon: <SiFirebase size={30} />,
+    // color: "#F2C12B",
+  },
+  {
+    id: 5,
+    name: "Javascript",
+    icon: <IoLogoJavascript size={30} />,
+    // color: "#EAD41C",
+  },
+  {
+    id: 6,
+    name: "Git",
+    icon: <SiGit size={30} />,
+    // color: "#E84D31",
+  },
+];

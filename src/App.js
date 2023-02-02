@@ -1,13 +1,12 @@
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Project from "./components/Project";
-import Title from "./components/Title";
-import Navbar from "./components/Navbar";
-import { HiOutlineChevronUp } from "react-icons/hi";
-import { HashLink as Link } from "react-router-hash-link";
+import { HiArrowNarrowUp } from "react-icons/hi";
+import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { ClimbingBoxLoader } from "react-spinners";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,16 +27,14 @@ function App() {
       ) : (
         <div className="main_body" id="home">
           <Navbar />
-          <Title />
-          <Project />
-          <About />
-          <Contact />
-          <footer className="text-center text-white py-2">
-            &#169; Created by Russ
-          </footer>
-          <Link to="#home" smooth>
-            <HiOutlineChevronUp className="arrow_up" size={35} />
-          </Link>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project-details/:id" element={<ProjectDetails />} />
+          </Routes>
+          <footer>&#169; Created by Russ</footer>
+          <LinkScroll to="home" smooth>
+            <HiArrowNarrowUp className="arrow_up" size={30} />
+          </LinkScroll>
         </div>
       )}
     </>

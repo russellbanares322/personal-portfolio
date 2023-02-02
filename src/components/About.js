@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
-import { Container, Image, Col, Row, Stack } from "react-bootstrap";
-import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiFirebase, SiGit } from "react-icons/si";
+import { Container, Image, Col, Row } from "react-bootstrap";
 import bgAbout from "../images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { techStacks } from "../data/ProjectsData";
 
 function About() {
   //Animate on Scroll
@@ -13,10 +11,10 @@ function About() {
     Aos.init();
   });
   return (
-    <Container className="text-center" id="about">
-      <h1 className="about_header_text pt-4" data-aos="fade-up">
+    <Container className="text-center" name="about">
+      <p className="about_header_text pt-4" data-aos="fade-up">
         ABOUT
-      </h1>
+      </p>
       <Row>
         <Col sm={4} data-aos="zoom-in">
           <Image className="about_image" src={bgAbout} fluid />
@@ -26,83 +24,17 @@ function About() {
             Passionate junior front-end web developer, loves to learn new
             skills.
           </h6>
-          <h1 className="skills_header_text pt-5" data-aos="fade-up">
+          <p className="skills_header_text pt-5" data-aos="fade-up">
             SKILLS
-          </h1>
-          <Stack
-            className="d-flex justify-content-center"
-            direction="horizontal"
-            data-aos="zoom-in-up"
-            gap={4}
-          >
-            <div className="react_wrapper">
-              <FaReact size={50} className="react_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                ReactJS
-              </p>
-            </div>
-            <div className="css_wrapper">
-              <FaCss3Alt size={50} className="css_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                CSS
-              </p>
-            </div>
-            <div className="html_wrapper">
-              <FaHtml5 size={50} className="html_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                HTML
-              </p>
-            </div>
-          </Stack>
-          <Stack
-            className="d-flex justify-content-center mt-4"
-            direction="horizontal"
-            data-aos="zoom-in-up"
-            gap={4}
-          >
-            <div className="js_wrapper">
-              <IoLogoJavascript size={50} className="js_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                Javascript
-              </p>
-            </div>
-            <div className="firebase_wrapper">
-              <SiFirebase size={50} className="firebase_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                Firebase
-              </p>
-            </div>
-            <div className="git_wrapper">
-              <SiGit size={50} className="git_logo" />
-              <p
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                style={{ paddingTop: "1rem" }}
-              >
-                Git
-              </p>
-            </div>
-          </Stack>
+          </p>
+          <div className="stack_wrapper">
+            {techStacks.map((stack) => (
+              <div className="stack_card" data-aos="slide-down" key={stack.id}>
+                <p className="stack_icon">{stack.icon}</p>
+                <p className="stack_name">{stack.name}</p>
+              </div>
+            ))}
+          </div>
         </Col>
       </Row>
     </Container>

@@ -3,36 +3,27 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { RiCodeSSlashFill } from "react-icons/ri";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
-import ProjectsData from "../data/ProjectsData";
+import { useEffect } from "react";
+import { projectsData } from "../data/ProjectsData";
 import { MdOndemandVideo } from "react-icons/md";
-import ProjectDetails from "./ProjectDetails";
 import { toast } from "react-hot-toast";
+// import { useNavigate } from "react-router-dom";
 
 function Project() {
-  const [projectData, setProjectData] = useState({});
-  const [showModal, setShowModal] = useState(false);
+  // const navigate = useNavigate("");
 
-  const handleShowModal = (project) => {
-    setProjectData(project);
-    setShowModal(true);
-  };
-
-  const handleHideModal = () => {
-    setShowModal(false);
-  };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   });
 
   return (
-    <Container fluid className="text-center project_tab" id="project">
-      <h1 className="project_header_text pt-3" data-aos="fade-up">
+    <Container fluid className="text-center project_tab" name="project">
+      <p className="project_header_text" data-aos="fade-up">
         PROJECT
-      </h1>
+      </p>
       <Container>
         <Row xs={1} sm={1} md={2} lg={3} className="g-3" id="project">
-          {ProjectsData.map((project) => (
+          {projectsData.map((project) => (
             <Col className="d-flex justify-content-center" key={project.id}>
               <Card
                 className="project_card"
@@ -48,13 +39,12 @@ function Project() {
                   <div className="info_text_wrapper">
                     <p
                       className="info_text"
-                      onClick={() => {
-                        project.video !== null
-                          ? handleShowModal(project)
-                          : toast.error("This is still under development");
-                      }}
+                      // onClick={() => navigate(`/project-details/${project.id}`)}
+                      onClick={() =>
+                        toast.error("Page is still under development")
+                      }
                     >
-                      Watch Demo
+                      View Details
                       <MdOndemandVideo
                         size={20}
                         style={{ marginLeft: "0.2rem" }}
@@ -121,14 +111,6 @@ function Project() {
             </Col>
           ))}
         </Row>
-        {showModal && (
-          <ProjectDetails
-            showModal={showModal}
-            setShowModal={setShowModal}
-            handleHideModal={handleHideModal}
-            {...projectData}
-          />
-        )}
       </Container>
     </Container>
   );
