@@ -785,4 +785,14 @@ footer {
     -webkit-text-stroke: 0.8px #379683;
     color: #05386B;
   }
+  .stack_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #F5F5F5;
+    width:fit-content;
+    margin-left: 0.3rem;
+  }
 }
