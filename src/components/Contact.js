@@ -46,7 +46,12 @@ function Contact() {
       <p className="contact_header_text text-center" data-aos="fade-up">
         GET IN TOUCH
       </p>
-      <Form ref={form} className="contact_form text-dark" onSubmit={sendEmail}>
+      <Form
+        data-aos="fade-up"
+        ref={form}
+        className="contact_form text-dark"
+        onSubmit={sendEmail}
+      >
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Name</Form.Label>
           <Form.Control

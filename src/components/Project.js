@@ -34,14 +34,17 @@ function Project() {
                   <Card.Img
                     className="project_img"
                     variant="top"
-                    src={project.image}
+                    src={project.thumbnail_image}
                   />
                   <div className="info_text_wrapper">
                     <p
                       className="info_text"
-                      // onClick={() => navigate(`/project-details/${project.id}`)}
+                      // onClick={() => {
+                      //   navigate(`/project-details/${project.id}`);
+                      //   window.scroll(0, 0);
+                      // }}
                       onClick={() =>
-                        toast.error("Page is still under development")
+                        toast.error("The page is still under development")
                       }
                     >
                       View Details

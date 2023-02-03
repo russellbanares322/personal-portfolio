@@ -3,10 +3,9 @@ import { HiArrowNarrowUp } from "react-icons/hi";
 import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { ClimbingBoxLoader } from "react-spinners";
-import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
-import ProjectDetails from "./components/ProjectDetails";
+// import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -26,10 +25,9 @@ function App() {
         </div>
       ) : (
         <div className="main_body" id="home">
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/project-details/:id" element={<ProjectDetails />} />
+            {/* <Route path="/project-details/:id" element={<ProjectDetails />} /> */}
           </Routes>
           <footer>&#169; Created by Russ</footer>
           <LinkScroll to="home" smooth>

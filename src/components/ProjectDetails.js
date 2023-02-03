@@ -24,7 +24,20 @@ const ProjectDetails = () => {
       {project?.map((proj) => (
         <div key={proj.id}>
           <p className="project-details-title">{proj.title}</p>
-          <p>{proj.details}</p>
+          <section className="project-wrapper">
+            <p className="project-details">{proj.details}</p>
+            <div className="image-wrapper">
+              {proj.images.map((image) => (
+                <div key={image.id}>
+                  <img
+                    src={image}
+                    className="project-images"
+                    alt="project_images"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       ))}
     </div>

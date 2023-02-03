@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link as LinkScroll } from "react-scroll";
-import "./styles.css";
-import logo from "../images/logo.png";
-import { useLocation, useNavigate } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -11,7 +10,6 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
 
   //Changing the title of browser
   useEffect(() => {
@@ -73,9 +71,6 @@ const Navbar = () => {
   });
   return (
     <header
-      style={{
-        display: location.pathname !== "/" ? "none" : "flex",
-      }}
       onClick={() => navigate("/")}
       className={isScroll ? "navbar-header-active" : "navbar-header"}
       name="home"

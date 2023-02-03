@@ -60,7 +60,7 @@
  
 .title-container{
   height: 50rem !important;
-  background-image: url("./images/bodyBg.svg");
+  background-image: url("./assets/images/bodyBg.svg");
   background-size: cover;
 }
 .title-wrapper {
@@ -95,6 +95,9 @@
 .title-icon {
   display:flex;
   margin: 1.3rem 0 0 1.4rem;
+}
+.title-icon a {
+  text-decoration: none;
   color: #d4e8fc;
 }
 .title-icon-github {
@@ -143,8 +146,30 @@
 /* Project Details */
 .project-details-body {
   background-color: #EDF5E1;
-  height: 100vh;
+  height: 150vh;
   padding-top: 2rem;
+}
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:1rem 2rem;
+}
+.project-images {
+  width: 10rem;
+  height: 10rem;
+  margin: 0.3rem;
+  object-fit: contain;
+}
+.project_wrapper {
+  display: flex;
+  flex-direction: row;
+  
+}
+.project-details {
+  text-align: center;
 }
 .project-details-return-btn {
   color: #1c5fa3;
@@ -164,6 +189,7 @@
 }
 /* Navbar */
 .navbar-header {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 80px;
@@ -538,11 +564,6 @@ footer {
      margin-top: 2rem;
      margin-left: 3.4rem;
    }
-  .title-container{
-    height: 50rem !important;
-    background-image: url("./images/bodyBg.svg");
-    background-size: cover;
-  }
   .title-wrapper {
     margin-top: 4rem;
   }
@@ -651,11 +672,6 @@ footer {
      margin-top: 3rem;
      margin-left: 0.8rem;
    }
-  .title-container{
-    height: 50rem !important;
-    background-image: url("./images/bodyBg.svg");
-    background-size: cover;
-  }
   .title-wrapper {
     margin-top: 5.1rem;
   }
@@ -687,7 +703,7 @@ footer {
   
   .title-icon {
     display:flex;
-    margin: 1.3rem 0 0 1.4rem;
+    margin: 1.3rem 0 0 0.5rem;
     color: #d4e8fc;
   }
   .title-icon-github {

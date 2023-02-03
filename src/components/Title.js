@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import bgTitle from "../images/bgTitle.svg";
+import bgTitle from "../assets/images/bgTitle.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
@@ -25,12 +25,28 @@ const Title = () => {
               a showcase of my projects and my abilities.
             </h1>
             <div className="title-icon">
-              <RiGithubLine className="title-icon-github" data-aos="slide-up" />
-              <RiLinkedinLine
-                className="title-icon-linkedin"
-                data-aos="slide-up"
-              />
-              <a href={resume} download>
+              <a
+                href="https://github.com/russellbanares322"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiGithubLine
+                  className="title-icon-github"
+                  data-aos="slide-up"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/russell-ba%C3%B1ares-5aa044242/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiLinkedinLine
+                  className="title-icon-linkedin"
+                  data-aos="slide-up"
+                />
+              </a>
+
+              <a href={resume} download="Russell_Banares.pdf">
                 <button className="title-icon-resume-btn" data-aos="slide-up">
                   Résumé
                 </button>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Image, Row } from "react-bootstrap";
-import bgAbout from "../images/bgAbout.svg";
+import bgAbout from "../assets/images/bgAbout.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { techStacks } from "../data/ProjectsData";
@@ -16,7 +16,7 @@ function About() {
         ABOUT
       </p>
       <Row sm={1} md={1} lg={2} xl={2}>
-        <div>
+        <div data-aos="fade-up">
           <Image className="about_image" src={bgAbout} fluid />
         </div>
         <div>
