@@ -68,11 +68,11 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Crypto Currency Tracker",
+    title: "Trackeroo",
     details:
       "A project that uses an api to fetch data about crypto currency prices, with the help of axios library.",
     technologies: "ReactJS | Axios",
-    live_link: "https://cryptotrackerapp-orpin.vercel.app/",
+    live_link: "https://trackeroo.vercel.app/",
     source_code: "https://github.com/russellbanares322/cryptotrackerapp",
     thumbnail_image: require("../assets/projectImages/crypto_app/crypto_currency_tracker_app.jpg"),
     images: [

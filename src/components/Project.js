@@ -39,10 +39,6 @@ function Project() {
                   <div className="info_text_wrapper">
                     <p
                       className="info_text"
-                      // onClick={() => {
-                      //   navigate(`/project-details/${project.id}`);
-                      //   window.scroll(0, 0);
-                      // }}
                       onClick={() =>
                         toast.error("The page is still under development")
                       }
