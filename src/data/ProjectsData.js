@@ -11,12 +11,21 @@ export const projectsData = [
     technologies: "ReactJS | Axios | Firebase | ReactSplide",
     live_link: "https://netflix-clone-d2z2.onrender.com/",
     source_code: "https://github.com/russellbanares322/netflix-clone",
-    thumbnail_image: require("../assets/projectImages/netflix/netflix_app.jpg"),
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687236/ProjectImages/NetflixClone/netflix_app_yp0nrq.jpg",
     images: [
-      require("../assets/projectImages/netflix/signup_page.png"),
-      require("../assets/projectImages/netflix/signin_page.png"),
-      require("../assets/projectImages/netflix/full_page.png"),
-      require("../assets/projectImages/netflix/details_page.png"),
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687253/ProjectImages/NetflixClone/full_page_d5n7k3.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687254/ProjectImages/NetflixClone/signup_page_rp2f05.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687246/ProjectImages/NetflixClone/signin_page_upbhyo.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687242/ProjectImages/NetflixClone/details_page_tv82du.png",
+      },
     ],
     video: require("../assets/projectVids/netflix_clone.mp4"),
   },
@@ -28,10 +37,18 @@ export const projectsData = [
     technologies: "ReactJS | Firebase",
     live_link: "https://russcrud.netlify.app/",
     source_code: "https://github.com/russellbanares322/react-firebase-crud",
-    thumbnail_image: require("../assets/projectImages/firebase_crud/firebase_crud.jpg"),
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687217/ProjectImages/FirebaseCrud/firebase_crud_uaps5d.jpg",
     images: [
-      require("../assets/projectImages/firebase_crud/add_page.png"),
-      require("../assets/projectImages/firebase_crud/update_page.png"),
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687217/ProjectImages/FirebaseCrud/firebase_crud_uaps5d.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687217/ProjectImages/FirebaseCrud/add_page_adrcgi.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687217/ProjectImages/FirebaseCrud/update_page_hmwbjq.png",
+      },
     ],
     video: require("../assets/projectVids/firebase_crud.mp4"),
   },
@@ -43,26 +60,30 @@ export const projectsData = [
     technologies: "ReactJS | Firebase | EmailJS | Tawk.to Live Chat",
     live_link: null,
     source_code: "https://github.com/russellbanares322/propertyfinder-app",
-    thumbnail_image: require("../assets/projectImages/property_finder/property_finder.jpg"),
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687262/ProjectImages/PropertyFinder/property_finder_k578cd.jpg",
     images: [
-      require("../assets/projectImages/property_finder/landing_page.png"),
-      require("../assets/projectImages/property_finder/login_page.png"),
-      require("../assets/projectImages/property_finder/registration_page.png"),
-      require("../assets/projectImages/property_finder/forgot_password.png"),
-      require("../assets/projectImages/property_finder/post_property_form.png"),
-      require("../assets/projectImages/property_finder/property_page.png"),
-      require("../assets/projectImages/property_finder/sidebar_filter.jpg"),
-      require("../assets/projectImages/property_finder/about_page.png"),
-      require("../assets/projectImages/property_finder/favorites_page.png"),
-      require("../assets/projectImages/property_finder/admin_dashboard_page.png"),
-      require("../assets/projectImages/property_finder/listed_property_page.png"),
-      require("../assets/projectImages/property_finder/clients_list_page.png"),
-      require("../assets/projectImages/property_finder/property_details_page.png"),
-      require("../assets/projectImages/property_finder/property_details_page1.png"),
-      require("../assets/projectImages/property_finder/property_details_page2.png"),
-      require("../assets/projectImages/property_finder/adding_client_form.png"),
-      require("../assets/projectImages/property_finder/appointment_form.jpg"),
-      require("../assets/projectImages/property_finder/live_chat.jpg"),
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687281/ProjectImages/PropertyFinder/landing_page_lpeziy.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687266/ProjectImages/PropertyFinder/login_page_p7lo5q.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687263/ProjectImages/PropertyFinder/registration_page_r3jult.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687264/ProjectImages/PropertyFinder/forgot_password_kxkriw.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687279/ProjectImages/PropertyFinder/property_page_fdrwdf.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687266/ProjectImages/PropertyFinder/favorites_page_qmpx22.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687267/ProjectImages/PropertyFinder/listed_property_page_fw4lpy.png",
+      },
     ],
     video: require("../assets/projectVids/property_management_system.mp4"),
   },
@@ -74,12 +95,21 @@ export const projectsData = [
     technologies: "ReactJS | Axios",
     live_link: "https://trackeroo.vercel.app/",
     source_code: "https://github.com/russellbanares322/cryptotrackerapp",
-    thumbnail_image: require("../assets/projectImages/crypto_app/crypto_currency_tracker_app.jpg"),
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687198/ProjectImages/CryptoApp/crypto_currency_tracker_app_voejlu.jpg",
     images: [
-      require("../assets/projectImages/crypto_app/landing_page.png"),
-      require("../assets/projectImages/crypto_app/trending_coins.png"),
-      require("../assets/projectImages/crypto_app/crypto_price_table.png"),
-      require("../assets/projectImages/crypto_app/details_page.png"),
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687200/ProjectImages/CryptoApp/landing_page_z1kxdq.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687198/ProjectImages/CryptoApp/crypto_price_table_qj78uj.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687197/ProjectImages/CryptoApp/trending_coins_lai6p2.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687198/ProjectImages/CryptoApp/details_page_ium8gw.png",
+      },
     ],
     video: require("../assets/projectVids/crypto_app.mp4"),
   },
@@ -91,10 +121,15 @@ export const projectsData = [
     technologies: "ReactJS | Axios",
     live_link: "https://games-list-viewer.vercel.app/",
     source_code: "https://github.com/russellbanares322/games-list-app",
-    thumbnail_image: require("../assets/projectImages/game_app/game_app.jpg"),
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687297/ProjectImages/GamesList/game_app_g5fam1.jpg",
     images: [
-      require("../assets/projectImages/game_app/landing_page.png"),
-      require("../assets/projectImages/game_app/light_mode.png"),
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687303/ProjectImages/GamesList/landing_page_ruuvho.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687299/ProjectImages/GamesList/light_mode_nnmw2b.png",
+      },
     ],
     video: require("../assets/projectVids/games_list_app.mkv"),
   },

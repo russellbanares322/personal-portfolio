@@ -5,12 +5,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { projectsData } from "../data/ProjectsData";
-import { MdOndemandVideo } from "react-icons/md";
+import { HiOutlineInformationCircle } from "react-icons/hi";
 import { toast } from "react-hot-toast";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Project() {
-  // const navigate = useNavigate("");
+  const navigate = useNavigate("");
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -39,12 +39,12 @@ function Project() {
                   <div className="info_text_wrapper">
                     <p
                       className="info_text"
-                      onClick={() =>
-                        toast.error("The page is still under development")
-                      }
+                      onClick={() => {
+                        navigate(`/project-details/${project.id}`);
+                      }}
                     >
                       View Details
-                      <MdOndemandVideo
+                      <HiOutlineInformationCircle
                         size={20}
                         style={{ marginLeft: "0.2rem" }}
                       />

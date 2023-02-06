@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } =
   process.env;
 
-function Contact() {
+const Contact = () => {
   //Animate on scroll
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -102,6 +102,6 @@ function Contact() {
       </Form>
     </Container>
   );
-}
+};
 
 export default Contact;
