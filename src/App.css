@@ -176,7 +176,8 @@
   object-fit: fill;
   box-sizing: border-box;
   line-height: auto;
-  padding: 20px 0 20px;
+  padding: 2.3rem 0 2rem;
+  border-radius: 1rem !important;
 }
 .close-icon {
   position:absolute;
