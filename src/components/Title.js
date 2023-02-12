@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import bgTitle from "../assets/images/bgTitle.svg";
+import bgTitle from "../assets/images/bgTitle2.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
@@ -53,8 +53,9 @@ const Title = () => {
               </a>
             </div>
           </Col>
-          <Col data-aos="fade-up">
+          <Col className="title-bg-container" data-aos="fade-up">
             <Image src={bgTitle} className="title-bg" fluid />
+            {/* <p className="title-bg-text">Welcome to the jungle</p> */}
           </Col>
         </Row>
       </Container>

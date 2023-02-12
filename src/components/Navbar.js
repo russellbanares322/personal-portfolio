@@ -86,7 +86,7 @@ const Navbar = () => {
           duration={500}
           style={{ color: isScroll ? "#05386B" : "#F3F3F3" }}
           activeClass="navbar-links navbar-active-link"
-          className={"navbar-links"}
+          className="navbar-links"
           onClick={handleCloseNav}
           to="home"
         >

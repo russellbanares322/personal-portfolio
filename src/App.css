@@ -51,6 +51,9 @@
 }
 
 /* Title */
+.title-bg-container {
+  position: relative;
+}
 .title-bg {
   width: 25rem;
    height: 25rem;
@@ -58,6 +61,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
+ }
+ .title-bg-text {
+  color: red;
+  position: absolute;
+  bottom: 200px;
+  left: 60px;
+  font-size: 10px;
+
  }
  
 .title-container{
@@ -75,7 +86,7 @@
   margin-left: 15px;
   font-weight: 600;
   color: #EDF5E1;
-  -webkit-text-stroke: 2px #05386B;
+  text-shadow: 4px 1px 0px #05386B;
 }
 
 .p-title1 {
@@ -91,7 +102,7 @@
   margin-left: 25px;
   font-weight: 500;
   color: #EDF5E1;
-  -webkit-text-stroke: 0.3px #05386B;
+  text-shadow: 1px 1px 0px #05386B;
 }
 
 .title-icon {
@@ -341,9 +352,6 @@ nav .navbar-links:hover::after, nav .navbar-active-link::after {
   background: #20578d;
   transition: all 1s;
   border-radius: 1rem;
-}
-.navbar-active-link {
-  color: red ;
 }
 .navbar-menu-btn {
   margin-left: auto;
@@ -618,8 +626,8 @@ footer {
       justify-content: center;
       gap: 1.3rem;
       background-color: #5CDB95;
-      transition: 1s ease-in-out;
-      transform: translateX(160vh);
+      transition: 0.7s ease-in-out;
+      transform: translateY(-160vh);
   }
   .navbar-header-active nav {
       background-color: #F3F3F3;
@@ -632,8 +640,8 @@ footer {
       align-items: center;
       justify-content: center;
       gap: 1.3rem;
-      transition: 1s ease-in-out;
-      transform: translateX(160vh);
+      transition: 0.7s ease-in-out;
+      transform: translateY(-160vh);
   }
 
   .navbar-header .responsive_navbar {
@@ -676,7 +684,7 @@ footer {
     margin-left: 15px;
     font-weight: 600;
     color: #EDF5E1;
-    -webkit-text-stroke: 2px #05386B;
+    text-shadow: 4px 1px 0px #05386B;
   }
   
   .p-title1 {
@@ -692,7 +700,7 @@ footer {
     margin-left: 23px;
     font-weight: 500;
     color: #EDF5E1;
-    -webkit-text-stroke: 0.3px #05386B;
+    text-shadow: 2px 1px 0px #05386B;
   }
   
   .title-icon {
@@ -829,7 +837,7 @@ footer {
     margin-left: 0.3rem;
     font-weight: 600;
     color: #EDF5E1;
-    -webkit-text-stroke: 2px #05386B;
+    text-shadow: 4px 1px 0px #05386B;
   }
   
   .p-title1 {
@@ -845,7 +853,7 @@ footer {
     margin-left: 0.3rem;
     font-weight: 500;
     color: #EDF5E1;
-    -webkit-text-stroke: 0.2px #05386B;
+    text-shadow: 2px 1px 0px #05386B;
   }
   
   .title-icon {
