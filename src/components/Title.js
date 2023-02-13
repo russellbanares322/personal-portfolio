@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import bgTitle from "../assets/images/bgTitle2.svg";
+import bgTitle from "../assets/images/bgTitle.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
