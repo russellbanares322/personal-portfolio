@@ -57,7 +57,8 @@
 .title-bg {
   width: 25rem;
    height: 25rem;
-   margin-top: 17rem;
+   margin-top: 20rem;
+   margin-left: 7rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -72,9 +73,10 @@
  }
  
 .title-container{
-  height: 50rem !important;
+  height: auto;
   background-image: url("./assets/images/bodyBg.svg");
   background-size: cover;
+  padding-bottom: 4rem;
 }
 .title-wrapper {
   margin-top: 8rem;
@@ -535,6 +537,11 @@ h6 {
 }
 
 /* Form */
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact_form {
   border: 1px solid #EDF5E1;
   color: #EDF5E1;
@@ -546,8 +553,8 @@ h6 {
   -webkit-backdrop-filter: blur(3.4px);
   -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-  margin: 1rem 25rem 2rem 25rem;
-  width: 30rem;
+  margin-bottom: 1rem;
+  width: 36rem;
 }
 .feedback_text {
   font-style: italic;
@@ -603,8 +610,7 @@ footer {
     -webkit-backdrop-filter: blur(3.4px);
     -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-    margin: 1rem 17rem 2rem 17rem;
-      width: 50%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -672,7 +678,10 @@ footer {
     width: 20rem;
      height: 20rem;
      margin-top: 2rem;
-     margin-left: 3.4rem;
+     margin-left: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
   .title-wrapper {
     margin-top: 4rem;
@@ -700,7 +709,7 @@ footer {
     margin-left: 23px;
     font-weight: 500;
     color: #EDF5E1;
-    text-shadow: 2px 1px 0px #05386B;
+    text-shadow: 1px 1px 0px #05386B;
   }
   
   .title-icon {
@@ -770,7 +779,7 @@ footer {
     -webkit-backdrop-filter: blur(3.4px);
     -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-    margin: 0;
+    margin-bottom: 1rem;
     width:100%
   }
   .project-details-title {
@@ -826,6 +835,9 @@ footer {
      height: 20rem;
      margin-top: 3rem;
      margin-left: 0.8rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
   .title-wrapper {
     margin-top: 5.1rem;
@@ -853,7 +865,7 @@ footer {
     margin-left: 0.3rem;
     font-weight: 500;
     color: #EDF5E1;
-    text-shadow: 2px 1px 0px #05386B;
+    text-shadow: 1px 1px 0px #05386B;
   }
   
   .title-icon {
