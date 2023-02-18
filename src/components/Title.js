@@ -55,10 +55,20 @@ const Title = () => {
           </Col>
           <Col className="title-bg-container" data-aos="fade-up">
             <Image src={bgTitle} className="title-bg" fluid />
-            {/* <p className="title-bg-text">Welcome to the jungle</p> */}
           </Col>
         </Row>
       </Container>
+      <svg
+        className="title-wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#EDF5E1"
+          fill-opacity="1"
+          d="M0,256L1440,96L1440,320L0,320Z"
+        ></path>
+      </svg>
     </Container>
   );
 };
