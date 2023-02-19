@@ -455,7 +455,7 @@ nav .navbar-links:hover::after, nav .navbar-active-link::after {
 
 .about_wave {
   position: absolute;
-  top: -4.2rem;
+  top: -3.6rem;
   left: 0;
   width: 100%;
 }
