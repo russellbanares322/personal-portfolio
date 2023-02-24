@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HiArrowNarrowLeft, HiOutlineXCircle } from "react-icons/hi";
+import { HiArrowNarrowLeft } from "react-icons/hi";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../data/ProjectsData";
 import Aos from "aos";
@@ -53,7 +53,6 @@ const ProjectDetails = () => {
           onClick={() => setIsModalOpen(false)}
         >
           <div className="modal-content">
-            <HiOutlineXCircle className="close-icon" size={33} />
             <img src={selectedImage} alt="project" />
           </div>
         </div>

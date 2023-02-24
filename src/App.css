@@ -168,7 +168,7 @@
 
 /* Project Details */
 .modal-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -184,34 +184,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  background-color: #f3f3f3;
-  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.75);
-  border-radius: 0.6rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content img {
   width: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
   margin: 0 auto;
   object-fit: fill;
   box-sizing: border-box;
   line-height: auto;
   padding: 2.3rem 0 2rem;
-  border-radius: 1rem !important;
-}
-.close-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0.5rem 0.9rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  color: #f3f3f3;
-  fill: #05386b;
-}
-.close-icon:hover {
-  transform: scale(1.1);
 }
 
 .project {
