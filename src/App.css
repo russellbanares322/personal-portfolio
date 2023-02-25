@@ -29,10 +29,12 @@
 .source_code_btn:active,
 .send_btn:active {
   border-bottom-width: 2px;
+  border-right-width: 1px;
   top: 3px;
 }
+
 .live_btn {
-  margin-right: 0.4rem;
+  margin-right: 0.7rem;
 }
 .send_btn_wrapper {
   display: grid;
@@ -43,12 +45,12 @@
 .live_btn,
 .source_code_btn,
 .send_btn {
-  background: #5487b9;
   color: #d4e8fc;
   border: 0;
   padding: 5px 10px;
-  border-bottom: 5px solid #05386b;
-  border-left: 1px solid #05386b;
+  background-color: #052749;
+  border-bottom: 4px solid #5487b9;
+  border-right: 1px solid #5487b9;
   border-radius: 6px;
   cursor: pointer;
   position: relative;
@@ -125,40 +127,44 @@
 .title-icon-github {
   font-size: 2.7rem;
   margin-right: 1rem;
-  background: #5487b9;
   padding: 0.4rem;
   border-radius: 0.3rem;
   cursor: pointer;
-  border-bottom: 4px solid #052749;
-  border-left: 1px solid #052749;
+  background-color: #052749;
+  border-bottom: 4px solid #5487b9;
+  border-right: 1px solid #5487b9;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 .title-icon-linkedin {
   font-size: 2.7rem;
-  background: #5487b9;
   padding: 0.4rem;
   border-radius: 0.3rem;
   cursor: pointer;
-  border-bottom: 4px solid #052749;
-  border-left: 1px solid #052749;
+  background-color: #052749;
+  border-bottom: 4px solid #5487b9;
+  border-right: 1px solid #5487b9;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 .title-icon-resume-btn {
   border-radius: 0.3rem;
   border: none;
   color: #d4e8fc;
-  background-color: #5487b9;
-  border-bottom: 4px solid #052749;
-  border-left: 1px solid #052749;
+  background-color: #052749;
+  border-bottom: 4px solid #5487b9;
+  border-right: 1px solid #5487b9;
   position: relative;
   margin-left: 1.3rem;
   padding: 0.5rem 1.5rem;
   font-weight: 300;
+  transition: 0.3s ease-in-out;
 }
 .title-icon-github:active,
 .title-icon-linkedin:active,
 .title-icon-resume-btn:active {
   border-bottom-width: 2px;
+  border-right-width: 1px;
   top: 3px;
 }
 
@@ -400,8 +406,7 @@ nav .navbar-active-link::after {
 .project_header_text {
   font-size: 45px;
   font-weight: 600;
-  letter-spacing: 3px;
-  -webkit-text-stroke: 0.8px #379683;
+  letter-spacing: 1px;
   color: #05386b;
   margin-bottom: 3rem;
   padding-top: 3rem;
@@ -469,16 +474,15 @@ nav .navbar-active-link::after {
   margin-bottom: 70px !important;
   font-size: 45px;
   font-weight: 600;
-  letter-spacing: 3px;
-  -webkit-text-stroke: 0.8px #379683;
+  letter-spacing: 1px;
   color: #05386b;
 }
 .skills_header_text {
   margin-top: 4rem !important;
   margin-bottom: 50px !important;
   font-size: 45px;
-  -webkit-text-stroke: 1.2px #05386b;
-  color: #edf5e1;
+  font-weight: 600;
+  color: #05386b;
 }
 .contact_header_text {
   margin-top: 90px !important;
@@ -486,12 +490,11 @@ nav .navbar-active-link::after {
   font-size: 45px;
   padding-top: 3rem;
   font-weight: 600;
-  letter-spacing: 3px;
-  -webkit-text-stroke: 0.8px #379683;
+  letter-spacing: 1px;
   color: #05386b;
 }
 .button_live {
-  margin-right: 20px !important;
+  margin-right: 25px !important;
   background-color: #05386b !important;
   border: none !important;
 }
@@ -730,30 +733,30 @@ footer {
   .title-icon-github {
     font-size: 2.9rem;
     margin-right: 1rem;
-    background: #5487b9;
     padding: 0.6rem;
     border-radius: 0.3rem;
     cursor: pointer;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
     z-index: 1.1;
   }
   .title-icon-linkedin {
     font-size: 2.9rem;
-    background: #5487b9;
     padding: 0.6rem;
     border-radius: 0.3rem;
     cursor: pointer;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
   }
   .title-icon-resume-btn {
     border-radius: 0.3rem;
     border: none;
     color: #d4e8fc;
-    background-color: #5487b9;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
     position: relative;
     margin-left: 1.3rem;
     padding: 0.6rem 1.6rem;
@@ -775,16 +778,14 @@ footer {
     margin-bottom: 70px !important;
     font-size: 2.3rem;
     font-weight: 600;
-    letter-spacing: 3px;
-    -webkit-text-stroke: 1.5px #05386b;
-    color: #edf5e1;
+    letter-spacing: 1px;
+    color: #05386b;
   }
   .skills_header_text {
     margin-top: 30px !important;
     margin-bottom: 50px !important;
     font-size: 2rem;
-    -webkit-text-stroke: 1.2px #05386b;
-    color: #edf5e1;
+    color: #05386b;
   }
   .contact_form {
     border: 1px solid #edf5e1;
@@ -894,31 +895,31 @@ footer {
   .title-icon-github {
     font-size: 2.4rem;
     margin-right: 1rem;
-    background: #5487b9;
     padding: 0.3rem;
     border-radius: 0.3rem;
     cursor: pointer;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
     position: relative;
   }
   .title-icon-linkedin {
     font-size: 2.4rem;
-    background: #5487b9;
     padding: 0.3rem;
     border-radius: 0.3rem;
     cursor: pointer;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
     position: relative;
   }
   .title-icon-resume-btn {
     border-radius: 0.3rem;
     border: none;
     color: #d4e8fc;
-    background-color: #5487b9;
-    border-bottom: 4px solid #052749;
-    border-left: 1px solid #052749;
+    background-color: #052749;
+    border-bottom: 4px solid #5487b9;
+    border-right: 1px solid #5487b9;
     position: relative;
     margin-left: 1.3rem;
     padding: 0.4rem 1.5rem;
@@ -939,16 +940,14 @@ footer {
   .skills_header_text {
     margin-top: 30px !important;
     margin-bottom: 50px !important;
-    font-size: 2.3rem;
-    -webkit-text-stroke: 1.2px #05386b;
-    color: #edf5e1;
+    font-size: 2rem;
+    color: #05386b;
   }
   .contact_form {
     border: 1px solid #edf5e1;
     color: #edf5e1;
     border-radius: 20px;
-    padding: 2rem;
-    background: rgba(243, 243, 243, 0.71);
+    background: #edf5e1;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
@@ -965,19 +964,17 @@ footer {
   .project_header_text {
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 3px;
-    -webkit-text-stroke: 0.8px #379683;
+    letter-spacing: 1px;
     color: #05386b;
     margin-bottom: 3rem;
   }
   .about_header_text {
     margin-top: 30px !important;
     margin-bottom: 70px !important;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 3px;
-    -webkit-text-stroke: 1.5px #05386b;
-    color: #edf5e1;
+    letter-spacing: 1px;
+    color: #05386b;
   }
   .contact_header_text {
     margin-top: 90px !important;
@@ -985,8 +982,7 @@ footer {
     font-size: 2rem;
     padding-top: 3rem;
     font-weight: 600;
-    letter-spacing: 3px;
-    -webkit-text-stroke: 0.8px #379683;
+    letter-spacing: 1px;
     color: #05386b;
   }
   .stack_wrapper {
