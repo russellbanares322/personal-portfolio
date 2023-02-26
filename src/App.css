@@ -245,10 +245,9 @@
 }
 .project-image-text {
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   padding-top: 4rem;
-  -webkit-text-stroke: 0.8px #379683;
   color: #05386b;
 }
 
@@ -268,10 +267,9 @@
   transform: translateX(-3px);
 }
 .project-details-title {
-  -webkit-text-stroke: 0.8px #379683;
   color: #05386b;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -284,10 +282,9 @@
   padding-bottom: 5rem;
 }
 .video-title {
-  -webkit-text-stroke: 0.8px #379683;
   color: #05386b;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
 }
 .video-wrapper {
@@ -808,10 +805,9 @@ footer {
     width: 100%;
   }
   .project-details-title {
-    -webkit-text-stroke: 0.8px #379683;
     color: #05386b;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5rem;
   }
   .project-details {
@@ -827,29 +823,22 @@ footer {
     flex-direction: column;
     padding: 1rem 0.6rem 5rem 0.6rem;
   }
-  .video-title {
-    color: #5cdb95;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-  }
+
   .video-wrapper {
     max-width: 50rem;
     max-height: 50rem;
   }
   .project-image-text {
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
     padding-top: 4rem;
-    -webkit-text-stroke: 0.8px #379683;
     color: #05386b;
   }
   .video-title {
-    -webkit-text-stroke: 0.8px #379683;
     color: #05386b;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
   }
 }
@@ -1008,10 +997,9 @@ footer {
     font-size: 0.9rem;
   }
   .project-details-title {
-    -webkit-text-stroke: 0.8px #379683;
     color: #05386b;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
   }
 
@@ -1023,9 +1011,9 @@ footer {
     padding: 1rem 0.6rem 5rem 0.6rem;
   }
   .video-title {
-    color: #5cdb95;
+    color: #05386b;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;
   }
   .video-wrapper {
@@ -1034,19 +1022,12 @@ footer {
   }
   .project-image-text {
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
     padding-top: 4rem;
-    -webkit-text-stroke: 0.8px #379683;
     color: #05386b;
   }
-  .video-title {
-    -webkit-text-stroke: 0.8px #379683;
-    color: #05386b;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.6rem;
-  }
+
   .about_wave {
     position: absolute;
     top: -3rem;
