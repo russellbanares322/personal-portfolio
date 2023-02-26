@@ -32,7 +32,7 @@ function App() {
           <HiArrowNarrowUp
             onClick={() => window.scroll(0, 0)}
             className="arrow_up"
-            size={30}
+            size={45}
           />
         </div>
       )}
