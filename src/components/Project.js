@@ -59,12 +59,15 @@ function Project() {
                   >
                     {project.details}
                   </Card.Subtitle>
-                  <Card.Subtitle
-                    style={{ fontSize: "0.9rem" }}
-                    className="my-3"
-                  >
-                    {project.technologies}
-                  </Card.Subtitle>
+                  <div className="project_technologies">
+                    <Card.Subtitle
+                      className="my-3"
+                      style={{ fontSize: "0.9rem" }}
+                    >
+                      {project.technologies.join(" | ")}
+                    </Card.Subtitle>
+                  </div>
+
                   <div className="d-flex justify-content-center align-items-center">
                     {project.live_link !== null ? (
                       <a

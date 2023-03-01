@@ -217,6 +217,12 @@
   padding-top: 2rem;
   z-index: -1;
 }
+.project_technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .image-wrapper {
   display: flex;
   padding: 1rem 1.3rem;
