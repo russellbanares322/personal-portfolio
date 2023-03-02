@@ -19,7 +19,7 @@ function Project() {
   return (
     <Container fluid className="text-center project_tab" name="project">
       <p className="project_header_text" data-aos="fade-up">
-        PROJECT
+        PROJECTS
       </p>
       <Container>
         <Row xs={1} sm={1} md={2} lg={3} className="g-3" id="project">
