@@ -66,7 +66,6 @@ const Contact = () => {
         <Form
           noValidate
           validated={validated}
-          data-aos="fade-up"
           ref={formRef}
           className="contact_form text-dark"
           onSubmit={handleSendEmail}
