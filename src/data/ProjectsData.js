@@ -12,10 +12,10 @@ export const projectsData = [
     live_link: "https://netflix-clone-d2z2.onrender.com/",
     source_code: "https://github.com/russellbanares322/netflix-clone",
     thumbnail_image:
-      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687236/ProjectImages/NetflixClone/netflix_app_yp0nrq.jpg",
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1678018753/ProjectImages/NetflixClone/netflix-cover_sibtvr.jpg",
     images: [
       {
-        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687253/ProjectImages/NetflixClone/full_page_d5n7k3.png",
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1678017842/ProjectImages/NetflixClone/netflix-landing_gh52fp.png",
       },
       {
         src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687254/ProjectImages/NetflixClone/signup_page_rp2f05.png",
@@ -24,7 +24,10 @@ export const projectsData = [
         src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687246/ProjectImages/NetflixClone/signin_page_upbhyo.png",
       },
       {
-        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687242/ProjectImages/NetflixClone/details_page_tv82du.png",
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1678017827/ProjectImages/NetflixClone/netflix-details-page1_myluyi.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1678017825/ProjectImages/NetflixClone/netflix-details-page_kushl4.png",
       },
     ],
     video: require("../assets/projectVids/netflix_clone.mp4"),
