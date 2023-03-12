@@ -340,6 +340,10 @@ nav .navbar-links {
   position: relative;
   cursor: pointer;
 }
+nav .nav-links-icon {
+  padding-bottom: 0.2rem;
+  padding-left: 0.3rem;
+}
 nav .navbar-links:first-child {
   margin-left: 4rem;
 }

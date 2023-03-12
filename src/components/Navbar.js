@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
+import {
+  HiMenu,
+  HiOutlineChartSquareBar,
+  HiOutlineHome,
+  HiOutlineIdentification,
+  HiOutlineMail,
+  HiX,
+} from "react-icons/hi";
 import { Link as LinkScroll } from "react-scroll";
 import logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
@@ -84,47 +91,51 @@ const Navbar = () => {
       <nav ref={navRef}>
         <LinkScroll
           duration={500}
-          style={{ color: isScroll ? "#05386B" : "#F3F3F3" }}
-          activeClass="navbar-links navbar-active-link"
+          style={{ color: isScroll ? "#05386B" : "#ffff" }}
+          activeClass="navbar-active-link"
           className="navbar-links"
           onClick={handleCloseNav}
           to="home"
         >
           Home
+          <HiOutlineHome className="nav-links-icon" size={22} />
         </LinkScroll>
         <LinkScroll
           isDynamic={true}
           spy={true}
           duration={500}
-          style={{ color: isScroll ? "#05386B" : "#F3F3F3" }}
-          activeClass="navbar-links navbar-active-link"
+          style={{ color: isScroll ? "#05386B" : "#ffff" }}
+          activeClass="navbar-active-link"
           className="navbar-links"
           onClick={handleCloseNav}
           to="project"
         >
           Project
+          <HiOutlineChartSquareBar className="nav-links-icon" size={22} />
         </LinkScroll>
         <LinkScroll
           spy={true}
           duration={500}
-          style={{ color: isScroll ? "#05386B" : "#F3F3F3" }}
-          activeClass="navbar-links navbar-active-link"
+          style={{ color: isScroll ? "#05386B" : "#ffff" }}
+          activeClass="navbar-active-link"
           className="navbar-links"
           onClick={handleCloseNav}
           to="about"
         >
           About
+          <HiOutlineIdentification className="nav-links-icon" size={22} />
         </LinkScroll>
         <LinkScroll
           spy={true}
           duration={500}
-          style={{ color: isScroll ? "#05386B" : "#F3F3F3" }}
-          activeClass="navbar-links navbar-active-link"
+          style={{ color: isScroll ? "#05386B" : "#ffff" }}
+          activeClass="navbar-active-link"
           className="navbar-links"
           onClick={handleCloseNav}
           to="contact"
         >
           Contact
+          <HiOutlineMail className="nav-links-icon" size={22} />
         </LinkScroll>
 
         <button className="navbar-btn navbar-close-btn" onClick={handleShowNav}>
