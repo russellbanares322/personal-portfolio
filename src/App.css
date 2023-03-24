@@ -212,8 +212,9 @@
   padding-bottom: 10rem;
 }
 .project-details-body {
-  background-color: #edf5e1;
-  height: auto;
+  background-image: url("./assets/images/bgProjectDetails.svg");
+  background-size: cover;
+  height: 100%;
   padding-top: 2rem;
   z-index: -1;
 }

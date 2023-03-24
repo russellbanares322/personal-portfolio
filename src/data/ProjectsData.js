@@ -5,6 +5,33 @@ import { SiFirebase, SiGit } from "react-icons/si";
 export const projectsData = [
   {
     id: 1,
+    title: "Password Generator",
+    details:
+      "A front-end mentor challenge, which enables user to generate a password depending on selected checkbox option and range slider for the password's length.",
+    technologies: ["ReactJS", "React Hot Toast"],
+    live_link: "https://pwgeneratorx.netlify.app/",
+    source_code:
+      "https://github.com/russellbanares322/password-generator-fem-challenge",
+    thumbnail_image:
+      "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1679665956/ProjectImages/PasswordGenerator/landing_dahk3i.jpg",
+    images: [
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1679665956/ProjectImages/PasswordGenerator/landing_dahk3i.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1679664737/ProjectImages/PasswordGenerator/validation_oqotg2.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1679664737/ProjectImages/PasswordGenerator/clipboard_copy_rkcw84.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1679664737/ProjectImages/PasswordGenerator/generated_password_f1hwvp.png",
+      },
+    ],
+    video: require("../assets/projectVids/password_generator.mp4"),
+  },
+  {
+    id: 2,
     title: "Netflix Clone",
     details:
       "Web application that mimics the UI of Netflix, displays different types of movies using TMDB Api. And allows the user to save movie to favorites.",
@@ -33,7 +60,7 @@ export const projectsData = [
     video: require("../assets/projectVids/netflix_clone.mp4"),
   },
   {
-    id: 2,
+    id: 3,
     title: "ReactJS Firebase Crud",
     details:
       "A project that you can create, read, update and delete record. It also has an image upload functionality.",
@@ -56,7 +83,7 @@ export const projectsData = [
     video: require("../assets/projectVids/firebase_crud.mp4"),
   },
   {
-    id: 3,
+    id: 4,
     title: "Property Management System",
     details:
       "Our capstone project which display different kinds of property, and allowing the user to set an appointment.",
@@ -91,7 +118,7 @@ export const projectsData = [
     video: require("../assets/projectVids/property_management_system.mp4"),
   },
   {
-    id: 4,
+    id: 5,
     title: "Trackeroo",
     details:
       "A project that uses an api to fetch data about crypto currency prices, with the help of axios library.",
@@ -117,7 +144,7 @@ export const projectsData = [
     video: require("../assets/projectVids/crypto_app.mp4"),
   },
   {
-    id: 5,
+    id: 6,
     title: "Games List App",
     details:
       "Displaying different types of games with pagination, and axios library for api fetching.",
