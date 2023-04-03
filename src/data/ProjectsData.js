@@ -88,7 +88,7 @@ export const projectsData = [
     details:
       "Our capstone project which display different kinds of property, and allowing the user to set an appointment.",
     technologies: ["ReactJS", "Firebase", "EmailJS", "Tawk.to Live Chat"],
-    live_link: null,
+    live_link: "https://onehomeph.onrender.com/",
     source_code: "https://github.com/russellbanares322/propertyfinder-app",
     thumbnail_image:
       "https://res.cloudinary.com/dlcvmxjzv/image/upload/v1675687262/ProjectImages/PropertyFinder/property_finder_k578cd.jpg",
