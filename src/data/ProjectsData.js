@@ -1,6 +1,6 @@
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiFirebase, SiGit } from "react-icons/si";
+import { SiFirebase, SiGit, SiTailwindcss } from "react-icons/si";
 
 export const projectsData = [
   {
@@ -186,18 +186,23 @@ export const techStacks = [
   },
   {
     id: 4,
+    name: "TailwindCSS",
+    icon: <SiTailwindcss size={30} />,
+  },
+  {
+    id: 5,
     name: "Firebase",
     icon: <SiFirebase size={30} />,
     // color: "#F2C12B",
   },
   {
-    id: 5,
+    id: 6,
     name: "Javascript",
     icon: <IoLogoJavascript size={30} />,
     // color: "#EAD41C",
   },
   {
-    id: 6,
+    id: 7,
     name: "Git",
     icon: <SiGit size={30} />,
     // color: "#E84D31",
