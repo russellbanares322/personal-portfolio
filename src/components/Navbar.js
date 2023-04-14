@@ -24,13 +24,12 @@ const Navbar = () => {
   }, [currentPath]);
 
   //Showing of navbar in smaller screen size
-  const handleShowNav = () => {
+  const handleToggleNav = () => {
     navRef.current.classList.toggle("responsive_navbar");
     setIsNavOpen(!isNavOpen);
   };
 
   const handleCloseNav = () => {
-    navRef.current.classList.remove("responsive_navbar");
     setIsNavOpen(false);
   };
 
@@ -137,13 +136,9 @@ const Navbar = () => {
           Contact
           <HiOutlineMail className="nav-links-icon" size={22} />
         </LinkScroll>
-
-        <button className="navbar-btn navbar-close-btn" onClick={handleShowNav}>
-          <HiX />
-        </button>
       </nav>
-      <button className="navbar-btn navbar-menu-btn" onClick={handleShowNav}>
-        <HiMenu />
+      <button className="navbar-btn navbar-menu-btn" onClick={handleToggleNav}>
+        {!isNavOpen ? <HiMenu /> : <HiX />}
       </button>
     </header>
   );
