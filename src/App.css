@@ -653,22 +653,20 @@ footer {
     display: block;
   }
   .navbar-header nav {
-    border-left: 1px solid #edf5e1;
     position: fixed;
     top: 5rem;
     right: 0;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.3rem;
     background-color: #5cdb95;
     transition: 0.7s ease-in-out;
-    transform: translateX(160vh);
+    transform: translateY(-160vh);
   }
   .navbar-header-active nav {
-    border-left: 1px solid #5cdb95;
     background: rgba(243, 243, 243, 0.8);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.4px);
@@ -679,13 +677,13 @@ footer {
     top: 5rem;
     right: 0;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.3rem;
     transition: 0.7s ease-in-out;
-    transform: translateX(160vh);
+    transform: translateY(-160vh);
   }
 
   .navbar-header .responsive_navbar {
