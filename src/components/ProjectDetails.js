@@ -27,11 +27,9 @@ const ProjectDetails = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    // eslint-disable-next-line
     const singleProject = projectsData.filter(
       (val) => val.id.toString() === id
     );
-    console.log(singleProject);
     setProject(singleProject);
     setTimeout(() => {
       setIsLoading(false);
