@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=VT323&display=swap");
+
+body,
+html {
+  min-height: 100vh;
+  height: 100%;
+}
 * {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -170,6 +176,7 @@
 
 .main_body {
   background-color: #5cdb95;
+  position: relative;
 }
 
 /* Project Details */
@@ -226,16 +233,24 @@
 }
 .image-wrapper {
   display: flex;
-  padding: 1rem 1.3rem;
+  padding: 1rem 1.1rem;
   flex-wrap: wrap;
+  gap: 0.8rem;
   justify-content: center;
   align-items: center;
+}
+.project-image-skeleton {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 .project-images {
   width: 20rem;
   height: 20rem;
   object-fit: cover;
-  margin: 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid #f3f3f3;
   cursor: pointer;
@@ -407,7 +422,7 @@ nav .navbar-active-link::after {
   cursor: pointer;
   border-right: 2px solid #5487b9;
   border-bottom: 2px solid #5487b9;
-  z-index: 2;
+  z-index: 1;
 }
 .arrow_up:active {
   border-right: 1px solid #5487b9;
@@ -559,7 +574,7 @@ h6 {
   background-color: #edf5e1 !important;
 }
 .contact_tab {
-  margin-top: 5rem;
+  margin-top: 3rem;
   background-color: #edf5e1 !important;
   padding-bottom: 2rem;
 }
@@ -581,7 +596,7 @@ h6 {
   -webkit-backdrop-filter: blur(3.4px);
   -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
   -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   width: 36rem;
 }
 .feedback_text {
@@ -626,7 +641,11 @@ h6 {
 footer {
   color: #edf5e1;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #8ee4af;
+  width: 100%;
 }
 /* Media Queries */
 @media screen and (max-width: 1200px) {
@@ -641,7 +660,7 @@ footer {
     -webkit-backdrop-filter: blur(3.4px);
     -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -820,7 +839,7 @@ footer {
     -webkit-backdrop-filter: blur(3.4px);
     -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-    margin-bottom: 1rem;
+    margin-bottom: 2, 5rem;
     width: 100%;
   }
   .project-details-title {
@@ -967,7 +986,7 @@ footer {
     -webkit-backdrop-filter: blur(3.4px);
     -webkit-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
     -moz-box-shadow: 1px 5px 9px -6px rgba(66, 68, 90, 1);
-    margin: 0;
+    margin-bottom: 2rem;
     width: 100%;
   }
   .feedback_text {
